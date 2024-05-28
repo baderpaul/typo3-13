@@ -43,6 +43,10 @@
         <source>Edit the whole TypoScript record</source>
         <target state="final">Den gesamten TypoScript Datensatz bearbeiten</target>
       </trans-unit>
+      <trans-unit id="label.infoTypoScriptRecordFromSite" resname="label.infoTypoScriptRecordFromSite" approved="yes">
+        <source>The site TypoScript record from "%s" can be edited on filesystem level.</source>
+        <target state="final">Der Site-TypoScript-Datensatz von "%s" kann auf Dateisystemebene bearbeitet werden.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

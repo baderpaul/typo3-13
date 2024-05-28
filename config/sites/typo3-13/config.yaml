@@ -1,0 +1,26 @@
+base: 'http://typo3-13.ddev.site/'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    locale: de-DE
+    hreflang: de-DE
+    base: /
+    websiteTitle: 'Test de'
+    navigationTitle: Deutsch
+    flag: de
+    languageId: 0
+  -
+    title: English
+    enabled: true
+    languageId: 1
+    base: /en/
+    locale: en_US.UTF-8
+    navigationTitle: English
+    flag: gb
+    hreflang: ''
+    websiteTitle: 'Test eng'
+    fallbackType: strict
+    fallbacks: ''
+rootPageId: 1
+websiteTitle: Test

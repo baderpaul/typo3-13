@@ -23,6 +23,10 @@
         <source>This allows you to specify variants of the site's base. Can be used, for example, if you have a different domain for your staging environment.</source>
         <target state="final">Hier können Varianten der Site-Basis definiert werden. Kann z.B. verwendet werden, wenn es eine abweichende Domain für die Arbeitsumgebung gibt.</target>
       </trans-unit>
+      <trans-unit id="site.dependencies" resname="site.dependencies" approved="yes">
+        <source>Site sets ship parts of site configuration as composable pieces. Sets deliver Settings, TypoScript, and Page TSConfig for the scope of this site.</source>
+        <target state="final">Site-Sets liefern Teile der Site-Konfiguration als zusammensetzbare Teile. Sets liefern Einstellungen, TypoScript und Page TSConfig für den Rahmen dieser Site.</target>
+      </trans-unit>
       <trans-unit id="site_language.base" resname="site_language.base" approved="yes">
         <source>Use a full qualified domain "https://www.mydomain.fr/" or "/fr/". Use "/" to keep the main URL for the default language. Add language specific suffixes to use those, or configure complete URLs for independent domains.</source>
         <target state="final">Vollqualifizierten Domainnamen "https://www.mydomain.de/" oder "/de/" verwenden bzw. "/" zum Behalten der Haupt-URL für die Standardsprache.  Weitere sprachspezifische Endungen hinzufügen, um jene zu verwenden, oder komplette URLs für unabhängige Domains nehmen.</target>

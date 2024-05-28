@@ -16,8 +16,8 @@
         <target state="final">Abfrageeintrag "%s" entfernt!</target>
       </trans-unit>
       <trans-unit id="undelete_only" resname="undelete_only" approved="yes">
-        <source>undelete</source>
-        <target state="final">wiederherstellen</target>
+        <source>Undelete</source>
+        <target state="final">Wiederherstellen</target>
       </trans-unit>
     </body>
   </file>

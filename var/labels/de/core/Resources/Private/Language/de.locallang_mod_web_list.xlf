@@ -52,8 +52,8 @@
         <target state="final">Alle markieren Datensätze tatsächlich aus der Tabelle "%s" löschen?</target>
       </trans-unit>
       <trans-unit id="showInfo" resname="showInfo" approved="yes">
-        <source>Display information</source>
-        <target state="final">Informationen anzeigen</target>
+        <source>Info</source>
+        <target state="final">Info</target>
       </trans-unit>
       <trans-unit id="edit" resname="edit" approved="yes">
         <source>Edit record</source>

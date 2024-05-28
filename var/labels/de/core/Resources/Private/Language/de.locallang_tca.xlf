@@ -51,14 +51,6 @@
         <source>Edit Live (Online)</source>
         <target state="final">Live bearbeiten (Online)</target>
       </trans-unit>
-      <trans-unit id="workspace_perms_draft" resname="workspace_perms_draft" approved="yes">
-        <source>Edit Draft (Offline)</source>
-        <target state="final">Entwurf bearbeiten (Offline)</target>
-      </trans-unit>
-      <trans-unit id="workspace_perms_custom" resname="workspace_perms_custom" approved="yes">
-        <source>Create new workspace projects</source>
-        <target state="final">Neue Arbeitsumgebungsprojekte erstellen</target>
-      </trans-unit>
       <trans-unit id="TSconfig" resname="TSconfig" approved="yes">
         <source>TSconfig</source>
         <target state="final">TSconfig</target>
@@ -210,6 +202,14 @@
       <trans-unit id="be_users.tabs.personal_data" resname="be_users.tabs.personal_data" approved="yes">
         <source>Personal Data</source>
         <target state="final">Persönliche Daten</target>
+      </trans-unit>
+      <trans-unit id="be_groups.palettes.tableRestrictions" resname="be_groups.palettes.tableRestrictions" approved="yes">
+        <source>Table restrictions</source>
+        <target state="final">Tabellen-Einschränkungen</target>
+      </trans-unit>
+      <trans-unit id="be_groups.palettes.tableRestrictions.description" resname="be_groups.palettes.tableRestrictions.description" approved="yes">
+        <source>Tables chosen for modification automatically receive read access permissions. Therefore, there's no need to select them again in the list designated for listing purposes.</source>
+        <target state="final">Die zur Änderung ausgewählten Tabellen erhalten automatisch Lesezugriffsrechte. Sie müssen also nicht noch einmal in der Liste für die Auflistung ausgewählt werden.</target>
       </trans-unit>
       <trans-unit id="be_groups.title" resname="be_groups.title" approved="yes">
         <source>Grouptitle</source>

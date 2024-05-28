@@ -27,6 +27,10 @@
         <source>Variants for the Entry Point</source>
         <target state="final">Varianten für den Einstiegspunkt</target>
       </trans-unit>
+      <trans-unit id="site.dependencies" resname="site.dependencies" approved="yes">
+        <source>Sets for this Site</source>
+        <target state="final">Sets für diese Webseite</target>
+      </trans-unit>
       <trans-unit id="site.languages" resname="site.languages" approved="yes">
         <source>Available Languages for this Site</source>
         <target state="final">Verfügbare Sprachen für diese Site</target>

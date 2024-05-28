@@ -28,8 +28,8 @@
         <target state="final">Aktion</target>
       </trans-unit>
       <trans-unit id="column.recordTitle" resname="column.recordTitle" approved="yes">
-        <source>Record title</source>
-        <target state="final">Titel des Datensatzes</target>
+        <source>Title</source>
+        <target state="final">Titel</target>
       </trans-unit>
       <trans-unit id="differences" resname="differences" approved="yes">
         <source>Differences</source>
@@ -96,16 +96,16 @@
         <target state="final">Verlauf auf diesen Datensatz begrenzen</target>
       </trans-unit>
       <trans-unit id="differenceMsg" resname="differenceMsg" approved="yes">
-        <source>In the Difference column you can see the changes at every modification of records. New changes are displayed in &lt;span class="diff-g"&gt;green colored text&lt;/span&gt; and the &lt;span class="diff-r"&gt;red colored text&lt;/span&gt; are the old values which were removed.</source>
-        <target state="final">In der Spalte Unterschied sind die Änderungen bei jeder Bearbeitung des Datensatzes zu sehen. Neue Änderungen werden mit &lt;span class="diff-g"&gt;grünem Text&lt;/span&gt; dargestellt, die Änderungen mit &lt;span class="diff-r"&gt;rotem Text&lt;/span&gt; sind alte Werte, die entfernt wurden.</target>
+        <source>In the Difference column you can see the changes at every modification of records. New changes are displayed in green colored text and the red colored text are the old values which were removed.</source>
+        <target state="final">In der Spalte Unterschied können Sie die Änderungen bei jeder Änderung von Datensätzen sehen. Neue Änderungen werden in grünem Text angezeigt und der rote Text sind die alten Werte, die entfernt wurden.</target>
       </trans-unit>
       <trans-unit id="fullView" resname="fullView" approved="yes">
         <source>Return to full view</source>
         <target state="final">Zurück zur Gesamtanzeige</target>
       </trans-unit>
       <trans-unit id="historyRow.actiontype.1" resname="historyRow.actiontype.1" approved="yes">
-        <source>inserted</source>
-        <target state="final">eingefügt</target>
+        <source>created</source>
+        <target state="final">erstellt</target>
       </trans-unit>
       <trans-unit id="historyRow.actiontype.2" resname="historyRow.actiontype.2" approved="yes">
         <source>modified</source>

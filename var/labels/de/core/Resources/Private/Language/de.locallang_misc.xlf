@@ -299,6 +299,14 @@
         <source>Make copy instead of moving element</source>
         <target state="final">Kopieren statt Verschieben</target>
       </trans-unit>
+      <trans-unit id="newRecordWizard.filter.placeholder" resname="newRecordWizard.filter.placeholder" approved="yes">
+        <source>Search for any record type</source>
+        <target state="final">Suche nach einem beliebigen Datensatztyp</target>
+      </trans-unit>
+      <trans-unit id="newRecordWizard.filter.noResults" resname="newRecordWizard.filter.noResults" approved="yes">
+        <source>Unfortunately no record type matches your query, please try a different one.</source>
+        <target state="final">Leider passt kein Datensatztyp zu Ihrer Anfrage, bitte versuchen Sie einen anderen.</target>
+      </trans-unit>
       <trans-unit id="newContentElement" resname="newContentElement" approved="yes">
         <source>New content element</source>
         <target state="final">Neues Inhaltselement</target>

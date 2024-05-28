@@ -487,6 +487,22 @@
         <source>Start processing</source>
         <target state="final">Verarbeitung beginnen</target>
       </trans-unit>
+      <trans-unit id="localize.wizard.step.selectMode" resname="localize.wizard.step.selectMode" approved="yes">
+        <source>Localization mode</source>
+        <target state="final">Übersetzungsmodus</target>
+      </trans-unit>
+      <trans-unit id="localize.wizard.step.chooseLanguage" resname="localize.wizard.step.chooseLanguage" approved="yes">
+        <source>Source Language</source>
+        <target state="final">Ausgangssprache</target>
+      </trans-unit>
+      <trans-unit id="localize.wizard.step.chooseLanguage" resname="localize.wizard.step.chooseLanguage" approved="yes">
+        <source>Source Language</source>
+        <target state="final">Ausgangssprache</target>
+      </trans-unit>
+      <trans-unit id="localize.wizard.step.selectRecords" resname="localize.wizard.step.selectRecords" approved="yes">
+        <source>Records</source>
+        <target state="final">Datensätze</target>
+      </trans-unit>
       <trans-unit id="localize.view.chooseLanguage" resname="localize.view.chooseLanguage" approved="yes">
         <source>Choose the language from which you want to localize the content</source>
         <target state="final">Wählen Sie die Sprache, von der aus Sie Inhalte lokalisieren möchten</target>
@@ -521,13 +537,16 @@ Das bedeutet, dass beim Verschieben eines Elements oder beim Setzen von Metainfo
 					Sie werden Inhaltselemente frei bewegen können, aber Sie werden nicht die Möglichkeit haben, das Element mit Änderungen zu vergleichen, die in der Ausgangssprache gemacht wurden.&lt;br&gt;
 					&lt;strong&gt;Benutzen Sie diese Möglichkeit, wenn Sie Freiheit beim Entwurf Ihrer übersetzten Website wünschen.&lt;/strong&gt;
 				</target></trans-unit>
-      <trans-unit id="localize.educate.noTranslate" resname="localize.educate.noTranslate" xml:space="preserve" approved="yes">
-				<source>Using the translation wizard is not possible, because either translation is disabled or the translated page is in "mixed mode". Being in "mixed mode" means that both translated records that have a source language and "free mode" records without a parent, are present.&lt;br&gt;
-					We highlighted the problematic records for you in this case.
-				</source>
-			<target state="final">Die Verwendung des Übersetzungsassistenten ist nicht möglich, da entweder die Übersetzung deaktiviert ist oder sich die übersetzte Seite im "gemischten Modus" befindet. Im "gemischten Modus" zu sein bedeutet, dass sowohl übersetzte Datensätze, die eine Ausgangssprache haben, als auch Datensätze im "freien Modus" ohne einen Verknüpfung zum übergeordneten Datensatz vorhanden sind.&lt;br&gt;
-					Wir haben die problematischen Datensätze für Sie in diesem Fall hervorgehoben.
-				</target></trans-unit>
+      <trans-unit id="window.localization.mixed_mode.title" resname="window.localization.mixed_mode.title" approved="yes">
+        <source>Localization not possible</source>
+        <target state="final">Übersetzung nicht möglich</target>
+      </trans-unit>
+      <trans-unit id="window.localization.mixed_mode.message" resname="window.localization.mixed_mode.message" approved="yes">
+        <source>Using the translation wizard is not possible, because either translation is disabled or the translated page is in "mixed mode". Being in "mixed mode" means that both translated records that have a source language and "free mode" records without a parent, are present.
+					We highlighted the problematic records for you in this case.</source>
+        <target state="final">Die Verwendung des Übersetzungsassistenten ist nicht möglich, da entweder die Übersetzung deaktiviert ist oder die übersetzte Seite sich im "gemischten Modus" befindet. Gemischter Modus" bedeutet, dass sowohl übersetzte Datensätze, die eine Ausgangssprache haben, als auch Datensätze im "freien Modus" ohne Eltern-Datensatz vorhanden sind.
+					In diesem Fall haben wir die problematischen Datensätze für Sie hervorgehoben.</target>
+      </trans-unit>
       <trans-unit id="error.invalidBackendLayout" resname="error.invalidBackendLayout" approved="yes">
         <source>The selected page layout is mis-configured, no columns are specified to be editable. Please update your backend layout to have at least one parameter "colPos" set.</source>
         <target state="final">Das ausgewählte Seitenlayout ist falsch konfiguriert: Es sind keine Spalten als bearbeitbar festgelegt. Bitte aktualisieren Sie Ihr Backendlayout in der Art, dass zumindest einmal der Parameter "colPos" gesetzt ist.</target>

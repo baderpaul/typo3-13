@@ -96,12 +96,12 @@
         <target state="final">Sie haben keinen Zugriff auf den Ordner "%s".</target>
       </trans-unit>
       <trans-unit id="localStorageOfflineTitle" resname="localStorageOfflineTitle" approved="yes">
-        <source>Base folder for local storage missing</source>
-        <target state="final">Basisordner für lokale Speicherung fehlt</target>
+        <source>Base folder for local storage missing or not allowed</source>
+        <target state="final">Basisordner für lokalen Speicher fehlt oder ist nicht erlaubt</target>
       </trans-unit>
       <trans-unit id="localStorageOfflineMessage" resname="localStorageOfflineMessage" approved="yes">
-        <source>Base folder for local storage does not exists. Verify that the base folder for "%s" exists.</source>
-        <target state="final">Der Basisordner für den lokalen Speicher ist nicht vorhanden. Überprüfen Sie, ob der Basisordner für "%s" existiert.</target>
+        <source>Verify that the base folder for the storage "%s" exists and is allowed to be accessed.</source>
+        <target state="final">Vergewissern Sie sich, dass der Basisordner für den Speicher "%s" existiert und der Zugriff darauf erlaubt ist.</target>
       </trans-unit>
       <trans-unit id="folderNotFoundTitle" resname="folderNotFoundTitle" approved="yes">
         <source>Folder not found.</source>

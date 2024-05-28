@@ -3,6 +3,10 @@
   <file source-language="en" datatype="plaintext" original="EXT:core/Resources/Private/Language/locallang_core.xlf" date="2011-10-17T20:22:33Z" product-name="lang" target-language="de">
     <header/>
     <body>
+      <trans-unit id="labels.datepicker.label" resname="labels.datepicker.label" approved="yes">
+        <source>Open date picker</source>
+        <target state="final">Datumsauswahl öffnen</target>
+      </trans-unit>
       <trans-unit id="labels.openInNewWindow" resname="labels.openInNewWindow" approved="yes">
         <source>Open in new window</source>
         <target state="final">In neuem Fenster öffnen</target>
@@ -42,6 +46,10 @@
       <trans-unit id="labels.lockedRecordUser_content" resname="labels.lockedRecordUser_content" approved="yes">
         <source>The %s '%s' began to edit content on this page %s ago.</source>
         <target state="final">Der %s "%s" hat mit der Bearbeitung dieser Seite vor %s begonnen.</target>
+      </trans-unit>
+      <trans-unit id="labels.color" resname="labels.color" approved="yes">
+        <source>Color</source>
+        <target state="final">Farbe</target>
       </trans-unit>
       <trans-unit id="labels.user" resname="labels.user" approved="yes">
         <source>User</source>
@@ -371,10 +379,6 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="labels.show" resname="labels.show" approved="yes">
         <source>Show</source>
         <target state="final">Anzeigen</target>
-      </trans-unit>
-      <trans-unit id="labels.generalTab" resname="labels.generalTab" approved="yes">
-        <source>General</source>
-        <target state="final">Allgemein</target>
       </trans-unit>
       <trans-unit id="labels.refresh" resname="labels.refresh" approved="yes">
         <source>Reload the tree from server</source>
@@ -740,10 +744,6 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>There are %s reference(s) to this record!</source>
         <target state="final">Auf diesen Datensatz zeigen %s Referenz(en)!</target>
       </trans-unit>
-      <trans-unit id="labels.referencesToFolder" resname="labels.referencesToFolder" approved="yes">
-        <source>There are %s reference(s) to this folder!</source>
-        <target state="final">Auf diesen Ordner zeigen %s Referenzen!</target>
-      </trans-unit>
       <trans-unit id="labels.referencesToFile" resname="labels.referencesToFile" approved="yes">
         <source>There are %s reference(s) to this file!</source>
         <target state="final">Auf diese Datei zeigen %s Referenzen!</target>
@@ -755,6 +755,18 @@ Ohne Speichern fortfahren?</target></trans-unit>
       <trans-unit id="show_item.php.viewItem" resname="show_item.php.viewItem" approved="yes">
         <source>View Item</source>
         <target state="final">Element anzeigen</target>
+      </trans-unit>
+      <trans-unit id="show_item.php.fieldValues" resname="show_item.php.fieldValues" approved="yes">
+        <source>Field values</source>
+        <target state="final">Feldwerte</target>
+      </trans-unit>
+      <trans-unit id="show_item.php.general" resname="show_item.php.general" approved="yes">
+        <source>General</source>
+        <target state="final">Allgemein</target>
+      </trans-unit>
+      <trans-unit id="show_item.php.references" resname="show_item.php.references" approved="yes">
+        <source>References</source>
+        <target state="final">Referenzen</target>
       </trans-unit>
       <trans-unit id="show_item.php.referencesToThisItem" resname="show_item.php.referencesToThisItem" approved="yes">
         <source>References to this item</source>
@@ -833,8 +845,8 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <target state="final">FTP-BEREICH</target>
       </trans-unit>
       <trans-unit id="show_item.php.missing_record" resname="show_item.php.missing_record" approved="yes">
-        <source>Missing</source>
-        <target state="final">Fehlend</target>
+        <source>Record is missing!</source>
+        <target state="final">Datensatz fehlt!</target>
       </trans-unit>
       <trans-unit id="db_new.php.pagetitle" resname="db_new.php.pagetitle" approved="yes">
         <source>New record</source>
@@ -1020,6 +1032,10 @@ Ohne Speichern fortfahren?</target></trans-unit>
         <source>Rename</source>
         <target state="final">Umbenennen</target>
       </trans-unit>
+      <trans-unit id="file_rename.label" resname="file_rename.label" approved="yes">
+        <source>New filename</source>
+        <target state="final">Neuer Dateiname</target>
+      </trans-unit>
       <trans-unit id="file_rename.button.cancel" resname="file_rename.button.cancel" approved="yes">
         <source>Cancel</source>
         <target state="final">Abbrechen</target>
@@ -1196,6 +1212,10 @@ Do you want to refresh it now?</source>
         <source>Move "%1$s" into column "%3$s" on page "%2$s"?</source>
         <target state="final">"%1$s" in Spalte "%3$s" auf Seite "%2$s" verschieben?</target>
       </trans-unit>
+      <trans-unit id="mess.move_before" resname="mess.move_before" approved="yes">
+        <source>Move "%s" to before "%s"?</source>
+        <target state="final">Verschiebe "%s" vor "%s"?</target>
+      </trans-unit>
       <trans-unit id="mess.move_after" resname="mess.move_after" approved="yes">
         <source>Move "%s" to after "%s"?</source>
         <target state="final">"%s" hinter "%s" verschieben?</target>
@@ -1353,8 +1373,8 @@ Do you want to refresh it now?</source>
         <target state="final">Datei nicht gelöscht</target>
       </trans-unit>
       <trans-unit id="message.description.fileNotDeletedHasReferences" resname="message.description.fileNotDeletedHasReferences" approved="yes">
-        <source>The file cannot be deleted since it is still used at the following places</source>
-        <target state="final">Die Datei kann nicht gelöscht werden, weil sie noch an den folgenden Orten benutzt wird</target>
+        <source>The file "%s" cannot be deleted since it is still used at the following places</source>
+        <target state="final">Die Datei "%s" kann nicht gelöscht werden, da sie noch an folgenden Stellen verwendet wird</target>
       </trans-unit>
       <trans-unit id="message.header.folderNotDeletedHasFilesWithReferences" resname="message.header.folderNotDeletedHasFilesWithReferences" approved="yes">
         <source>Folder not deleted</source>
@@ -1395,14 +1415,6 @@ Do you want to refresh it now?</source>
       <trans-unit id="message.description.folderDeleted" resname="message.description.folderDeleted" approved="yes">
         <source>The folder "%s" was successfully deleted.</source>
         <target state="final">Der Ordner "%s" wurde erfolgreich gelöscht.</target>
-      </trans-unit>
-      <trans-unit id="message.header.folderNotDeletedHasFiles" resname="message.header.folderNotDeletedHasFiles" approved="yes">
-        <source>Folder not deleted</source>
-        <target state="final">Ordner nicht gelöscht</target>
-      </trans-unit>
-      <trans-unit id="message.description.folderNotDeletedHasFiles" resname="message.description.folderNotDeletedHasFiles" approved="yes">
-        <source>The folder cannot be deleted since it still contains files.</source>
-        <target state="final">Der Ordner kann nicht gelöscht werden, weil er noch Dateien enthält.</target>
       </trans-unit>
       <trans-unit id="buttons.logout" resname="buttons.logout" approved="yes">
         <source>Logout</source>
@@ -1527,6 +1539,10 @@ Do you want to refresh it now?</source>
       <trans-unit id="cm.select" resname="cm.select" approved="yes">
         <source>Select</source>
         <target state="final">Auswählen</target>
+      </trans-unit>
+      <trans-unit id="cm.selectFile" resname="cm.selectFile" approved="yes">
+        <source>Select %s</source>
+        <target state="final">Wähle %s</target>
       </trans-unit>
       <trans-unit id="cm.deselect" resname="cm.deselect" approved="yes">
         <source>Deselect</source>
@@ -1683,22 +1699,6 @@ Do you want to refresh it now?</source>
       <trans-unit id="sortable.dragmove" resname="sortable.dragmove" approved="yes">
         <source>Drag to move</source>
         <target state="final">Ziehen zum Bewegen</target>
-      </trans-unit>
-      <trans-unit id="tree.defaultPageTitle" resname="tree.defaultPageTitle" approved="yes">
-        <source>[Default Title]</source>
-        <target state="final">[Standard-Titel]</target>
-      </trans-unit>
-      <trans-unit id="tree.activeFilterMode" resname="tree.activeFilterMode" approved="yes">
-        <source>Active Filtering Mode</source>
-        <target state="final">Filtermodus aktiv</target>
-      </trans-unit>
-      <trans-unit id="tree.buttonNewNode" resname="tree.buttonNewNode" approved="yes">
-        <source>Create new pages</source>
-        <target state="final">Neue Seiten erstellen</target>
-      </trans-unit>
-      <trans-unit id="tree.buttonFilter" resname="tree.buttonFilter" approved="yes">
-        <source>Filter tree</source>
-        <target state="final">Baum filtern</target>
       </trans-unit>
       <trans-unit id="tree.searchTermInfo" resname="tree.searchTermInfo" approved="yes">
         <source>Enter search term</source>
@@ -2015,6 +2015,18 @@ Do you want to refresh it now?</source>
       <trans-unit id="labels.datepicker.today" resname="labels.datepicker.today" approved="yes">
         <source>Today</source>
         <target state="final">Heute</target>
+      </trans-unit>
+      <trans-unit id="labels.inputfield.clearButton.title" resname="labels.inputfield.clearButton.title" approved="yes">
+        <source>Clear input</source>
+        <target state="final">Eingabe löschen</target>
+      </trans-unit>
+      <trans-unit id="labels.contextMenu.open" resname="labels.contextMenu.open" approved="yes">
+        <source>Open context menu</source>
+        <target state="final">Kontextmenü öffnen</target>
+      </trans-unit>
+      <trans-unit id="labels.contextMenu.open.recordLabel" resname="labels.contextMenu.open.recordLabel" approved="yes">
+        <source>Open context menu for record: %s</source>
+        <target state="final">Kontextmenü für Datensatz öffnen: %s</target>
       </trans-unit>
     </body>
   </file>

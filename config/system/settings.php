@@ -2,6 +2,7 @@
 return [
     'BE' => [
         'debug' => false,
+        'entryPoint' => '/typo3',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$ZEhzY1owWEhxdmJYUU5jLw$7ZtgsE4khmjFV9ub2O51jrWfXI0UmnKDAfNCidqfrOA',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -99,6 +100,7 @@ return [
         'encryptionKey' => '19a17220d28f3dd85dce69268fed79bc2198f5d0f30387c07cfbe31ad4e1d8cea3dd3fadca23d34e39d0e0dac559b5b4',
         'exceptionalErrors' => 4096,
         'sitename' => 'TYPO3-13',
+        'systemLocale' => 'de_DE.UTF-8',
         'systemMaintainers' => [
             1,
         ],
