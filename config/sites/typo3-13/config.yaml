@@ -1,4 +1,7 @@
 base: 'http://typo3-13.ddev.site/'
+dependencies:
+  - typo3/fluid-styled-content
+  - TechDivision\SetupPackage
 languages:
   -
     title: Deutsch
