@@ -1,0 +1,9 @@
+<f:if condition="{data_item.tx_mask_iconteaserheadline}">
+    <h4>
+        {data_item.tx_mask_iconteaserheadline}
+    </h4>
+</f:if>
+<p>{data_item.tx_mask_iconteasertext -> f:format.stripTags()}</p>
+<f:if condition="{data_item.tx_mask_iconteaserlink}">
+    <f:render partial="Partials/Iconteaser/TeaserLink" arguments="{_all}"/>
+</f:if>

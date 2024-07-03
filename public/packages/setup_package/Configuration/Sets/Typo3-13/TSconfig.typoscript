@@ -1,0 +1,2 @@
+@import 'EXT:setup_package/Configuration/TSconfig/Page/Page.tsconfig'
+@import 'EXT:setup_package/Configuration/TSconfig/Page/TSBeLayouts.tsconfig'

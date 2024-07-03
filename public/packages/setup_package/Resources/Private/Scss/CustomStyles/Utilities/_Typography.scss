@@ -1,0 +1,192 @@
+/*h1,
+h2,
+h3 {
+    font-weight: $headings-font-weight-light;
+    display: inline-block;
+    position: relative;
+    &::after {
+        border: 1px solid $gray-900;
+        bottom: 0;
+        content: "";
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        width: 40%;
+      }
+}
+
+h3 {
+    font-weight: $font-weight-600;
+}*/
+
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3 {
+    color: $white;
+    &::after {
+        border: 1px solid $white;
+    }
+}
+/*
+.frame-type-list header h3 {
+    @extend #{'.fs-17','.pb-10','.text-uppercase','.border-bottom','.w-100','.mb-20'};
+    font-weight: $font-weight-500;
+}
+
+h4 {
+    font-weight: $font-weight-500;
+}
+
+.frame-type-textmedia h1,
+.frame-type-textmedia h2 {
+    font-weight: $font-weight-500;
+    line-height: $line-height;
+    margin-bottom: $headings-margin-bottom-20;
+}
+
+.frame-type-textmedia h1:after,
+.frame-type-textmedia h2:after,
+.frame-type-textmedia h3:after,
+.frame-type-list h3:after,
+h4:after {
+    display: none;
+}
+
+
+
+ul,
+ol {
+    padding-left: 1.5625rem;
+}
+
+.ce-bodytext ul,
+.ce-bodytext ol {
+    display: inline-block;
+    ul, ol {
+        display: block; 
+        padding-left: 1.5625rem;
+    }
+}
+
+ul.checkmarks li:before {
+    color: $primary;
+    content: "\f26e";
+    display: inline-block;
+    font-family: bootstrap-icons;
+    font-size: $font-size-icon;
+    margin-left: -2.0625rem;
+    position: absolute;
+    top: -14px;
+}
+
+.checkmarks {
+    list-style-type: none;
+    li {
+        position: relative;
+        padding: 0 .3125rem;
+        line-height: $line-height-lg;
+    }
+}
+*/
+/* bg images with plugin container & CType media  - reset padding around the headline in ce */
+/*
+.bg-container { 
+    .frame {
+        padding: 0 !important;
+        width: 100%;
+        .ce-gallery {
+            margin: 0 !important;
+            width: 100% !important;
+        }
+        .ce-textpic {
+            color: $white;
+            width: 100%;
+            .ce-bodytext {  
+
+                color: $white;
+                h2, h4 {
+                    color: $white;
+                }
+                h4 {
+                    font-weight: 700;
+                }              
+            }  
+        }
+    }
+}
+
+.footer-info {
+    .frame {
+        padding: 0 !important;
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .bg-container .frame .ce-textpic h2 {
+        font-size: $h4-font-size;
+    }
+    .bg-container .frame .ce-textpic h4 {
+        font-size: $font-size-base;
+        font-weight: 500;
+    }
+ }
+
+ mark,
+.mark {
+     @extend .fw-bold;
+     background: none;
+     color: $mark-bg;
+     padding: $mark-padding;
+ }
+
+ .text-shadow-light {
+    text-shadow: 1px 1px 1px $white;
+}
+.text-shadow-dark {
+    text-shadow: 1px 1px 1px $black;
+}   
+
+.list-square {
+    list-style-type: square;
+}
+
+.list-disc {
+    list-style-type: disc;
+}
+
+.list-decimal-leading-zero {
+    list-style-type: decimal-leading-zero;
+    padding-left: 1.875rem;
+}
+
+.blockquote {
+    position: relative;
+    margin-left: 6.250rem;
+    margin-right: 6.250rem;
+    color: $gray-900;
+}
+
+.blockquote:before {
+    content: '“';
+    color: $gray-400;
+    margin-right: 4px;
+    font-size:$font-size-blockquotes;
+    font-family: Georgia, serif;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+}
+
+.blockquote:after {
+    content: '”';
+    color: $gray-400;
+    margin-left: 3px;
+    font-size:$font-size-blockquotes;
+    font-family: Georgia, serif;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+*/
+

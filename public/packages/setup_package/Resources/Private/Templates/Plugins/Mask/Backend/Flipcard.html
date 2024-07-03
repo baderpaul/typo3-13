@@ -1,0 +1,6 @@
+<p>Folgende Flip Cards sind enthalten:</p>
+<ul>
+    <f:for each="{data.tx_mask_flipcard}" as="data_item">
+        <li>{data_item.tx_mask_flipcard_front_title -> f:format.nl2br()}</li>        
+    </f:for>
+</ul>

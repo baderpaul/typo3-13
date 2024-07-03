@@ -39,6 +39,10 @@
         <source>Limit to languages</source>
         <target state="final">Auf Sprachen einschränken</target>
       </trans-unit>
+      <trans-unit id="allowed_languages.description" resname="allowed_languages.description" approved="yes">
+        <source>If no language is selected, all languages will be available by default.</source>
+        <target state="final">Wenn keine Sprache ausgewählt wird, sind standardmäßig alle Sprachen verfügbar.</target>
+      </trans-unit>
       <trans-unit id="category_perms" resname="category_perms" approved="yes">
         <source>Category Mounts</source>
         <target state="final">Kategoriefreigaben</target>
@@ -179,9 +183,9 @@
         <source>Unavailable Languages</source>
         <target state="final">Nicht verfügbare Sprachen</target>
       </trans-unit>
-      <trans-unit id="be_users.tabs.rights" resname="be_users.tabs.rights" approved="yes">
-        <source>Access Rights</source>
-        <target state="final">Zugriffsrechte</target>
+      <trans-unit id="be_users.tabs.permissions" resname="be_users.tabs.permissions" approved="yes">
+        <source>Permissions</source>
+        <target state="final">Berechtigungen</target>
       </trans-unit>
       <trans-unit id="be_users.tabs.mounts_and_workspaces" resname="be_users.tabs.mounts_and_workspaces" approved="yes">
         <source>Mounts and Workspaces</source>
@@ -243,9 +247,13 @@
         <source>Inherit settings from groups</source>
         <target state="final">Einstellungen von Gruppen übernehmen</target>
       </trans-unit>
-      <trans-unit id="be_groups.tabs.base_rights" resname="be_groups.tabs.base_rights" approved="yes">
-        <source>Access Rights</source>
-        <target state="final">Zugriffsrechte</target>
+      <trans-unit id="be_groups.tabs.record_permissions" resname="be_groups.tabs.record_permissions" approved="yes">
+        <source>Record Permissions</source>
+        <target state="final">Berechtigungen aufzeichnen</target>
+      </trans-unit>
+      <trans-unit id="be_groups.tabs.module_permissions" resname="be_groups.tabs.module_permissions" approved="yes">
+        <source>Module Permissions</source>
+        <target state="final">Modul-Berechtigungen</target>
       </trans-unit>
       <trans-unit id="be_groups.tabs.mounts_and_workspaces" resname="be_groups.tabs.mounts_and_workspaces" approved="yes">
         <source>Mounts and Workspaces</source>

@@ -111,10 +111,6 @@
         <source>Go to Workspace Module</source>
         <target state="final">Modul Arbeitsumgebungen aufrufen</target>
       </trans-unit>
-      <trans-unit id="bookmark_description" resname="bookmark_description" approved="yes">
-        <source>This is the bookmarks menu. You do not have any bookmarks added yet. You can add one by clicking the bookmark icon %s, which you can find on all pages in the backend.</source>
-        <target state="final">Dies ist das Lesezeichen-Menü. Sie haben noch kein Lesezeichen hinzugefügt. Sie können das aber mit einem Klick auf das Lesezeichensymbol %s tun, welches auf jeder Seite des TYPO3-Backend gefunden werden kann.</target>
-      </trans-unit>
       <trans-unit id="bookmark_edit" resname="bookmark_edit" approved="yes">
         <source>Edit</source>
         <target state="final">Bearbeiten</target>
@@ -211,10 +207,6 @@
         <source>inactive</source>
         <target state="final">inaktiv</target>
       </trans-unit>
-      <trans-unit id="bookmark_noWSfound" resname="bookmark_noWSfound" approved="yes">
-        <source>ERROR: No workspaces found!</source>
-        <target state="final">FEHLER: Keine Arbeitsumgebungen gefunden!</target>
-      </trans-unit>
       <trans-unit id="bookmark_FEPreview" resname="bookmark_FEPreview" approved="yes">
         <source>Enable Frontend Preview</source>
         <target state="final">Vorschau im Frontend aktivieren</target>
@@ -222,10 +214,6 @@
       <trans-unit id="bookmark_workspaceComparisonView" resname="bookmark_workspaceComparisonView" approved="yes">
         <source>Enable comparison view</source>
         <target state="final">Vergleichsansicht aktivieren</target>
-      </trans-unit>
-      <trans-unit id="bookmark_workspace" resname="bookmark_workspace" approved="yes">
-        <source>Go to Workspace Module</source>
-        <target state="final">Modul Arbeitsumgebungen aufrufen</target>
       </trans-unit>
       <trans-unit id="overwriteExistingFiles" resname="overwriteExistingFiles" approved="yes">
         <source>Overwrite existing files</source>
@@ -406,14 +394,6 @@
       <trans-unit id="pageTree_filter" resname="pageTree_filter" approved="yes">
         <source>Filter</source>
         <target state="final">Filter</target>
-      </trans-unit>
-      <trans-unit id="switchtouser" resname="switchtouser" approved="yes">
-        <source>Switch to User</source>
-        <target state="final">Umschalten zu Benutzer</target>
-      </trans-unit>
-      <trans-unit id="switchtousershort" resname="switchtousershort" approved="yes">
-        <source>SU</source>
-        <target state="final">BW</target>
       </trans-unit>
       <trans-unit id="fileUpload_windowTitle" resname="fileUpload_windowTitle" approved="yes">
         <source>File Upload Progress</source>

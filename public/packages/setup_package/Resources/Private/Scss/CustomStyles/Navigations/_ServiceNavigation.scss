@@ -1,0 +1,8 @@
+.service-menu,
+.footer-menu {
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

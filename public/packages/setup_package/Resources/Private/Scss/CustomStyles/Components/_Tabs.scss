@@ -1,0 +1,13 @@
+.tab-pane > .frame {
+    padding: 0 !important;
+}
+
+.tab-content .ce-textpic {
+    h2 {
+        display: inline;
+    }
+    .ce-gallery,
+    .ce-bodytext > p:last-child {
+        margin-bottom: 0 !important;
+    } 
+}

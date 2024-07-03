@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2013-02-24T16:42:57Z" product-name="theme_kit">
+        <header/>
+        <body>
+
+                    <!-- **************************************
+                         Language
+                         ************************************** -->
+                        <trans-unit id="language.languageswitch-label">
+                            <source>Select Language</source>
+                            <target>Sprache wählen fr</target>
+                        </trans-unit>
+
+
+        </body>
+    </file>
+</xliff>

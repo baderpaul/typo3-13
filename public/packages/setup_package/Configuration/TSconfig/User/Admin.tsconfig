@@ -1,0 +1,21 @@
+options{
+    pageTree {
+        showPageIdWithTitle = 1
+        backgroundColor {
+            2 = #cfe2ff
+            3 = #f8d7da
+            5 = #d1e7dd
+    }
+    }
+    clearCache.pages = 1
+}
+
+#
+# Set new pages & CE visible
+#
+
+    TCAdefaults {
+    page.hidden = 0
+        content.hidden = 0
+        tx_news.hidden = 0
+}

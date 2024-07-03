@@ -1,0 +1,12 @@
+<f:layout name="StickyFooterNavbar"/>
+<f:section name="content">
+    <div class="d-block d-lg-flex">
+    <main class="col-12 col-lg-9 order-2 px-0 pe-lg-80">
+        <f:format.raw>{colPos0}</f:format.raw>
+    </main>
+    <aside class="d-lg-block col-lg-3 left-2-col order-1 pt-lg-200 px-lg-50 ps-lg-80 ">
+        <f:render partial="Navigation/Sub" arguments="{_all}"/>
+        <f:format.raw>{colPos1}</f:format.raw>
+    </aside>
+</div>
+</f:section>

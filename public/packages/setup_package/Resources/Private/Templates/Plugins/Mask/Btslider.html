@@ -1,0 +1,13 @@
+<div id="carouselExampleIndicators-{data.uid}"
+     class="carousel slide {f:if(condition: '{data.tx_mask_modus} == 2', then: 'carousel-fade')}"
+     data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <f:render partial="Partials/Slider/SliderItems" arguments="{_all}"/>
+    </div>
+    <f:if condition="{data.tx_mask_carouselindicator}==1">
+      <f:render partial="Partials/Slider/SliderIndicator" arguments="{_all}"/>
+    </f:if>
+    <f:if condition="{data.tx_mask_carouselcontrol}==1">
+       <f:render partial="Partials/Slider/SliderControl" arguments="{_all}"/>
+    </f:if>
+</div>

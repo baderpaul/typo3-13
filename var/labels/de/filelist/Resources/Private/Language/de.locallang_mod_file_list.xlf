@@ -19,6 +19,10 @@
         <source>Edit Metadata</source>
         <target state="final">Metadaten bearbeiten</target>
       </trans-unit>
+      <trans-unit id="editColumns" resname="editColumns" approved="yes">
+        <source>Edit specific Metadata</source>
+        <target state="final">Spezifische Metadaten bearbeiten</target>
+      </trans-unit>
       <trans-unit id="clip_selectMarked" resname="clip_selectMarked" approved="yes">
         <source>Transfer to clipboard</source>
         <target state="final">In die Zwischenablage übertragen</target>

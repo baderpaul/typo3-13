@@ -1,0 +1,57 @@
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    default: /
+    index: ''
+    suffix: /
+    map:
+      preview.html: 1560777975
+      newsletter.html: 1562349004
+      pixel.png: 1561894816
+      #/: 0
+      sitemap.xml: 1533906435
+      markers.json: 1597149189
+  NewsList:
+    type: Extbase
+    limitToPages:
+      - 1
+      - 214
+    extension: News
+    plugin: Pi1
+    routes:
+      -
+        routePath: '/page/{page}'
+        _controller: 'News::list'
+        _arguments:
+          page: '@widget_0/currentPage'
+      -
+        routePath: '/{category_name}'
+        _controller: 'News::list'
+        _arguments:
+          category_name: overwriteDemand/categories
+    defaultController: 'News::list'
+    defaults:
+      page: '1'
+    requirements:
+      page: \d+
+    aspects:
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '1000'
+      category_name:
+        type: PersistedAliasMapper
+        tableName: sys_category
+        routeFieldName: slug
+  NewsDetail:
+    type: Plugin
+    limitToPages:
+      - 214
+    routePath: '{news}'
+    namespace: tx_news_pi1
+    aspects:
+      news:
+        type: PersistedPatternMapper
+        tableName: tx_news_domain_model_news
+        routeFieldPattern: '^(?P<path_segment>.+)-(?P<uid>\d+)$'
+        routeFieldResult: '{path_segment}-00{uid}'

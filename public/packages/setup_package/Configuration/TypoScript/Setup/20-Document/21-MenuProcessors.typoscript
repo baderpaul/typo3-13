@@ -1,0 +1,69 @@
+# Navigations
+page.10.dataProcessing {
+   
+# Topnav Megamenu
+    15 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    15 {
+        special = directory
+        special.value = 1
+        expandAll = 1
+        levels = 5
+        includeSpacer = 0
+        as = menuMainMega
+    }
+#Sidenav
+    20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    20 {
+        special.value = 1
+        levels = 5
+        entryLevel = 1
+        expandAll = 0
+        includeSpacer = 0
+        as = menuSub
+    }
+
+# Breadcrumb
+    40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    40 {
+        as = rootline
+        includeNotInMenu = 0
+        entryLevel = 1
+        special = rootline
+        special.range = 0|-1
+    }
+
+# Sectionnav
+    50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    50 {
+        // Always activate includeNotInMenu for a section menu of the current page
+        as = menuSection
+        includeNotInMenu.override = 1
+        includeNotInMenu.override.if.isFalse.field = pages
+        special = list
+        special {
+            value {
+                field = pages
+                override {
+                    data = page:uid
+                    if {
+                        isFalse.field = pages
+                    }
+                }
+            }
+        }
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = media
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            20 {
+                table = tt_content
+                pidInList.field = uid
+                as = content
+                where = sectionIndex = 1
+                orderBy = sorting
+            }
+        }
+    }
+}

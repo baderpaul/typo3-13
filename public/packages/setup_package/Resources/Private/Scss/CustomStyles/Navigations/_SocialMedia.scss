@@ -1,0 +1,16 @@
+.social-media-icon {
+    max-width: 1.5625rem;
+    a:hover {
+        opacity: .8;
+    }
+}
+
+.social-media-font {
+    width: 1.5625rem;
+    a {
+        font-size: 1.5625rem;
+        &:focus {
+            outline: 0 !important;
+        }
+    }
+}

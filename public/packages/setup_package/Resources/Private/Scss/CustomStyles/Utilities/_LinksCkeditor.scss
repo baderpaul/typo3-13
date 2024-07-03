@@ -1,0 +1,43 @@
+
+// possible linkstyles for ckeditor
+.arrow-link,
+.internal-link,
+.download,
+.external-link,
+.mail,
+.phone-link {
+    position: relative;
+    color: $link-color;
+    text-decoration: $link-decoration;
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}
+
+.arrow-link:after,
+.phone-link:before,
+.download:after {
+    position: absolute;
+    font-size: 1.125rem;
+}
+
+.arrow-link:after {
+    right: -2px;
+    content: "\261E";
+    top: -5px;
+}
+
+.phone-link:before {
+    padding-left:1px;
+    top: -7px;
+    left: -5px;
+    right: 2px;
+    content: "\260F";
+}
+
+.download:after {
+    right: -2px;
+    content: "\2B0E";
+    top: -4px;
+}

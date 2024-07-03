@@ -1,0 +1,11 @@
+[request.getNormalizedParams() && like(request.getNormalizedParams().getHttpHost(), "*.ddev.site")]
+    config {
+        no_cache = 1
+        compressCss = 0
+        concatenateCss = 0
+        concatenateJs = 0
+        compressJs = 0
+        contentObjectExceptionHandler = 1
+    }
+[end]
+#[request.getNormalizedParams().getHttpHost(), 'typo3-12.ddev.site']

@@ -71,6 +71,10 @@
         <source>Author</source>
         <target state="final">Entwickler</target>
       </trans-unit>
+      <trans-unit id="donation.sectionHeadline" resname="donation.sectionHeadline" approved="yes">
+        <source>TYPO3 Donation and community</source>
+        <target state="final">TYPO3 Spende und Community</target>
+      </trans-unit>
       <trans-unit id="donation_header" resname="donation_header" approved="yes">
         <source>TYPO3 Donation</source>
         <target state="final">TYPO3 Spende</target>
@@ -91,13 +95,25 @@
         <source>TYPO3 CMS core uses and thanks these external Open Source projects:</source>
         <target state="final">TYPO3 CMS-Kern verwendet und dankt diesen externen Open-Source-Projekten:</target>
       </trans-unit>
+      <trans-unit id="external_libraries.table.column.name" resname="external_libraries.table.column.name" approved="yes">
+        <source>Project name</source>
+        <target state="final">Projektname</target>
+      </trans-unit>
+      <trans-unit id="external_libraries.table.column.website" resname="external_libraries.table.column.website" approved="yes">
+        <source>Website</source>
+        <target state="final">Webseite</target>
+      </trans-unit>
       <trans-unit id="introtext" resname="introtext" approved="yes">
         <source>Web Content Management System</source>
         <target state="final">Web Content-Management-System</target>
       </trans-unit>
-      <trans-unit id="introtext2" resname="introtext2" approved="yes">
+      <trans-unit id="modules.headline" resname="modules.headline" approved="yes">
+        <source>Modules</source>
+        <target state="final">Module</target>
+      </trans-unit>
+      <trans-unit id="modules.introtext" resname="modules.introtext" approved="yes">
         <source>This is a brief description of the available modules.</source>
-        <target state="final">Dies ist eine kurze Beschreibung der verfügbaren Module.</target>
+        <target state="final">Hier finden Sie eine kurze Beschreibung der verfügbaren Module.</target>
       </trans-unit>
       <trans-unit id="endText" resname="endText" approved="yes">
         <source>Features may vary depending on your website and permissions</source>
@@ -106,6 +122,14 @@
       <trans-unit id="userInfo" resname="userInfo" approved="yes">
         <source>You're logged in as user</source>
         <target state="final">Sie sind angemeldet als Benutzer</target>
+      </trans-unit>
+      <trans-unit id="link.openModule" resname="link.openModule" approved="yes">
+        <source>Open module</source>
+        <target state="final">Modul öffnen</target>
+      </trans-unit>
+      <trans-unit id="link.openModuleWithTitle" resname="link.openModuleWithTitle" approved="yes">
+        <source>Open %1s module</source>
+        <target state="final">%1s Modul öffnen</target>
       </trans-unit>
     </body>
   </file>

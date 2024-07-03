@@ -1,0 +1,15 @@
+ plugin.tx_mask {
+    view {
+        templateRootPaths.10 = EXT:{$extKey}/Resources/Private/Templates/Plugins/Mask/
+        partialRootPaths.10 = EXT:{$extKey}/Resources/Private/Templates/Plugins/Mask/Partials/
+        layoutRootPaths.10 = EXT:{$extKey}/Resources/Private/Templates/Plugins/Mask/
+    }
+}
+
+module.tx_mask {
+    view {
+        templateRootPaths.10 = EXT:{$extKey}/Resources/Private/Templates/Plugins/Mask/Backend/
+        partialRootPaths.10 = EXT:{$extKey}/Resources/Private/Templates/Plugins/Mask/Backend/Partials/
+        layoutRootPaths.10 = EXT:{$extKey}/Resources/Private/Templates/Plugins/Mask/Backend/Layouts/
+    }
+}

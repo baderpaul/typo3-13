@@ -1,0 +1,7 @@
+name: TechDivision\SetupPackage
+label: TYPO3 V13 Setup via Sets
+
+# Load TypoScript, TSconfig and settings from dependencies
+#dependencies:
+  #- some-namespace/slider
+ # - other-namespace/fancy-carousel

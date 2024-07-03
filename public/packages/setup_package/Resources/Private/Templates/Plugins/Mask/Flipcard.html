@@ -1,0 +1,61 @@
+<div class="row px-10 px-lg-0 mb-25 mb-md-30 mx-0
+        {f:if(condition: '{data.tx_mask_flip_responsive_xs}', then: '{data.tx_mask_flip_responsive_xs}')}
+        {f:if(condition: '{data.tx_mask_flip_responsive_sm}', then: '{data.tx_mask_flip_responsive_sm}')}
+        {f:if(condition: '{data.tx_mask_flip_responsive_md}', then: '{data.tx_mask_flip_responsive_md}')}
+        {f:if(condition: '{data.tx_mask_flip_responsive_lg}', then: '{data.tx_mask_flip_responsive_lg}')}
+        {f:if(condition: '{data.tx_mask_flip_responsive_xl}', then: '{data.tx_mask_flip_responsive_xl}')}
+        {f:if(condition: '{data.tx_mask_flip_responsive_xxl}', then: '{data.tx_mask_flip_responsive_xxl}')}
+        {f:if(condition: '{data.tx_mask_flipcardspace_mobile}', then: '{data.tx_mask_flipcardspace_mobile}')}
+        {f:if(condition: '{data.tx_mask_cflipardspace_tablet}', then: '{data.tx_mask_flipcardspace_tablet}')}
+        {f:if(condition: '{data.tx_mask_flipcardspace_desktop}', then: '{data.tx_mask_flipcardspace_desktop}')} 
+        g-0  
+">
+<f:for each="{data.tx_mask_flipcard}" as="data_item">
+    <div class="col col-image-flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="mainflip ">
+            <f:render partial="Card/FlipcardFrontend" arguments="{_all}"/>
+            <f:render partial="Card/FlipcardBackend" arguments="{_all}"/>
+        </div>
+        </div>
+</f:for>
+<f:asset.css identifier="flip-css" priority="true">
+        .col-image-flip:hover .backside, 
+        .col-image-flip.hover .backside,
+        .col-image-flip:focus-within .backside {
+            transform: rotateY(0deg);
+        }
+        .col-image-flip:hover .frontside, 
+        .col-image-flip.hover .frontside,
+        .col-image-flip:focus-within .frontside {
+            transform: rotateY(180deg);
+        }
+        .mainflip {
+            -moz-transform: perspective(1000px);
+            transition: 1s;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        .frontside, 
+        .backside {
+            backface-visibility: hidden;
+            transition: 1s;
+            transform-style: preserve-3d;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%
+            z-index: 2;
+        }
+        .frontside {
+            transform: rotateY(0deg);
+        }
+        .backside {
+            transform: rotateY(-180deg);
+        }
+        .card, .card-img-top {
+            border-radius: 0;
+        }
+    }
+</f:asset.css>
+</div>

@@ -127,6 +127,10 @@
         <source>Included via "INCLUDE_TYPOSCRIPT" (with condition)</source>
         <target state="final">Eingebunden via "INCLUDE_TYPOSPOSCRIPT" (mit Bedingung)</target>
       </trans-unit>
+      <trans-unit id="tree.child.type.ConditionStop" resname="tree.child.type.ConditionStop" approved="yes">
+        <source>Condition (end)</source>
+        <target state="final">Bedingung (Ende)</target>
+      </trans-unit>
       <trans-unit id="tree.child.type.DefaultTypoScript" resname="tree.child.type.DefaultTypoScript" approved="yes">
         <source>Included via "$GLOBALS"</source>
         <target state="final">Eingebunden via "$GLOBALS"</target>
@@ -170,6 +174,10 @@
       <trans-unit id="tree.child.type.Site" resname="tree.child.type.Site" approved="yes">
         <source>Site</source>
         <target state="final">Site</target>
+      </trans-unit>
+      <trans-unit id="tree.child.type.SiteTemplate" resname="tree.child.type.SiteTemplate" approved="yes">
+        <source>Site configuration</source>
+        <target state="final">Site-Konfiguration</target>
       </trans-unit>
       <trans-unit id="tree.child.type.SysTemplate" resname="tree.child.type.SysTemplate" approved="yes">
         <source>TypoScript record</source>

@@ -1,0 +1,16 @@
+.tx-kesearch-pi1 {
+    .result-list-item:hover {
+        background: rgba($primary, .1);
+    }
+    a {
+        color: $gray-900;
+        @extend .stretched-link;
+
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
+    .page-link {
+        color: $primary;
+    }
+}

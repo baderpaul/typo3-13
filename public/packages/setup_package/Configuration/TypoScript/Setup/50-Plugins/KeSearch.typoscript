@@ -1,0 +1,35 @@
+plugin.tx_kesearch_pi1 {
+    view {
+        templateRootPaths.1 = EXT:setup_package/Resources/Private/Templates/Plugins/KeSearch/Templates/
+        partialRootPaths.1 = EXT:setup_package/Resources/Private/Templates/Plugins/KeSearch/Partials/
+        layoutRootPaths.1 = EXT:setup_package/Resources/Private/Templates/Plugins/KeSearch/Layouts/
+    }
+}
+
+plugin.tx_kesearch_pi2 {
+    view {
+        templateRootPaths.1 = EXT:setup_package/Resources/Private/Templates/Plugins/KeSearch/Templates/
+        partialRootPaths.1 = EXT:setup_package/Resources/Private/Templates/Plugins/KeSearch/Partials/
+        layoutRootPaths.1 = EXT:setup_package/Resources/Private/Templates/Plugins/KeSearch/Layouts/
+    }
+    highlightedWord_stdWrap.wrap = <mark>|</mark>
+    cssFile >
+}
+
+plugin.tx_kesearch_pi3 {
+    view {
+        templateRootPaths.1 = EXT:setup_package/Resources/Private/Templates/Plugins/KeSearch/Templates/
+        partialRootPaths.1 = EXT:setup_package/Resources/Private/Templates/Plugins/KeSearch/Partials/
+        layoutRootPaths.1 = EXT:setup_package/Resources/Private/Templates/Plugins/KeSearch/Layouts/
+    }
+}
+
+lib.searchbox = COA_INT
+lib.searchbox {
+  10 < plugin.tx_kesearch_pi1
+  10 {
+    resultPage = 225
+    loadFlexformsFromOtherCE = 64
+    cssFile >
+  }  
+}

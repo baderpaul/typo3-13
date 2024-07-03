@@ -1,0 +1,16 @@
+{
+  "name": "techdivision/setup-package",
+  "type": "typo3-cms-extension",
+  "description": "Pagesetup with all stuff",
+  "version": "2.0.0",
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "setup_package"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "TechDivision\\SetupPackage\\": "Classes/"
+    }
+  }
+}

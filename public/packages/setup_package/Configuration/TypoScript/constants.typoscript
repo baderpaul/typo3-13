@@ -1,0 +1,34 @@
+extKey = setup_package
+// general content
+styles.content.textmedia {
+    maxW = 1600
+    maxWInText = 480
+    linkWrap {
+        lightboxEnabled = 1
+        lightboxCssClass = glightbox
+        lightboxRelAttribute = noopener
+    }
+}
+styles.content.image.lazyLoading = lazyload
+// overwrite paths for default fluid_styled_content elements
+styles.templates {
+    layoutRootPath = EXT:setup_package/Resources/Private/Templates/FluidStyledContent/Layouts/
+    templateRootPath = EXT:setup_package/Resources/Private/Templates/FluidStyledContent/Templates/
+    partialRootPath = EXT:setup_package/Resources/Private/Templates/FluidStyledContent/Partials/  
+}
+
+styles.content.links {
+    target =
+    extTarget = _blank
+}
+
+td {
+    // theme- or packagename - used in some typoscript files
+    themeName = setup_package
+    // company name
+    companyName = Business Inc. All rights Reserved
+    configHeaderComment = Technische Umsetzung - Business Inc. All rights Reserved
+}
+
+// import other constants files
+@import 'EXT:setup_package/Configuration/TypoScript/Constants/*.typoscript'

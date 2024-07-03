@@ -1,0 +1,11 @@
+#
+-------------------------------------------------------------------------------
+#Tsconfig for one redakteur
+#-------------------------------------------------------------------------------
+
+# Posibility link to an not allowd pagetree if you area redakteur who works only width news
+#-------------------------------------------------------------------------------
+#options.pageTree.altElementBrowserMountPoints = id, id
+#options.folderTree.altElementBrowserMountPoints = ordner1, ordner2
+
+options.file_list.uploader.defaultAction = rename

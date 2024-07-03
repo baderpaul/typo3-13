@@ -1,0 +1,11 @@
+// remove yellow background from inputs in ff
+input {
+    filter: none;
+}
+
+// fix ff bug without autoprefixer
+
+.custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

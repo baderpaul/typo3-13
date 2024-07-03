@@ -1,0 +1,13 @@
+plugin.tx_form {
+    view {
+        templateRootPaths.100 = EXT:setup_package/Resources/Private/Templates/Plugins/TxForms/Frontend/Templates/
+        partialRootPaths.100 = EXT:setup_package/Resources/Private/Templates/Plugins/TxForms/Frontend/Partials/
+        layoutRootPaths.100 = EXT:setup_package/Resources/Private/Templates/Plugins/TxForms/Frontend/Layouts/
+    }
+
+    settings {
+        yamlConfigurations {
+            100 = EXT:setup_package/Configuration/Yaml/FormDefinition/DefaultFormConfiguration.yaml
+        }
+    }
+}

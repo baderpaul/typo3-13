@@ -1,0 +1,8 @@
+<?php
+
+defined('TYPO3_MODE') or die();
+/*
+ * Example for namespace
+ 
+namespace Namespace\SetupPackage\NamespaceExample;
+*/

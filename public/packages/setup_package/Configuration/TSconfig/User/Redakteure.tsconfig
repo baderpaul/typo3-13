@@ -1,0 +1,195 @@
+#-------------------------------------------------------------------------------
+#Tsconfig for Group redakteure
+#-------------------------------------------------------------------------------
+
+#(FE -)Cacheleeren
+#-------------------------------------------------------------------------------
+    options.clearCache.pages = 1
+options.clearCache.all = 1
+
+#Pagetreedifferentbackgroundcolorfor pages & show PageId in BETitle
+#-------------------------------------------------------------------------------
+    options.pageTree{
+    backgroundColor{
+        54 = #a03956
+        16 = #a4393c
+        2 = #a85239
+        4 = #ad703a
+        74 = #b1903a
+        47 = #b5b23a
+    }
+    showPageIdWithTitle = 1
+}
+
+#Allow creationm of new folders in Element Browser
+#-------------------------------------------------------------------------------
+    options.createFoldersInEB = 1
+
+# default settings for a BE user
+#-------------------------------------------------------------------------------
+    setup.default.condensedMode = 1
+setup.default.extendedView = 1
+
+setup.override{
+    # Extended view(secondary options
+)
+#-------------------------------------------------------------------------------
+    setup.override.extendedView = 1
+    setup.override.condensedMode = 0
+
+ # thumbnailsanzeigen
+ #-------------------------------------------------------------------------------
+    thumbnailsByDefault = 1
+
+ # title chars
+ #-------------------------------------------------------------------------------
+    titleLen = 100
+
+ # copy
+    levels
+ #-------------------------------------------------------------------------------
+    copyLevels = 1
+
+ # delete recursive
+ #-------------------------------------------------------------------------------
+    recursivDelete = 0
+
+ # don't hide after copy
+ #-------------------------------------------------------------------------------
+    neverHideAtCopy = 0
+
+ # Uploadfeld imD ateiauswahl Fenster entfernen
+ #-------------------------------------------------------------------------------
+    edit_docModuleUpload = 0
+
+ # Maximale Höhe setzen
+ #-------------------------------------------------------------------------------
+    resizeTextareas_MaxHeight = 400
+
+ # Flash - uploader aktivieren
+ #-------------------------------------------------------------------------------
+    enableFlashUploader = 0
+}
+
+#Kein Feld "Alias" in diesem Seitendatensatz anzeigen
+#-------------------------------------------------------------------------------
+    TCEFORM.pages.alias {
+    disabled = 1
+}
+
+#Kein Feld "Inhalt" in diesemSeitendatensatz anzeigen
+#-------------------------------------------------------------------------------
+    TCEFORM.pages.content_from_pid{
+    disabled = 1
+}
+
+# Kein Feld "Layout" in diesem Seitendatensatz anzeigen
+#-------------------------------------------------------------------------------
+    TCEFORM.pages {
+    layout.disabled = 1
+}
+
+#Aktiviere AdminPanel, nur mit Preview - Bereich
+#-------------------------------------------------------------------------------
+    admPanel {
+    enable.preview = 1
+}
+
+#
+Im WEB / Info - Modul nicht freigegebene Module
+ausblenden
+#
+-------------------------------------------------------------------------------
+    mod.web_info.menu.function
+{
+    tx_cms_webinfo_page = 0
+    tx_infopagetsconfig_webinfo = 0
+    tx_indexedsearch_modfunc1 = 0
+    tx_indexedsearch_modfunc2 = 0
+}
+
+#
+Pagetree
+#
+-------------------------------------------------------------------------------
+    options.pageTree
+{
+# Shows
+    the
+    user
+    db
+    mount
+    path
+    above
+    the
+    mount
+    itself(useful
+    if you work
+    a
+    lot
+    with user db
+    mounts
+)
+    showPathAboveMounts = 1
+
+	# Shows
+    the
+    page
+    id as a
+    prefix
+    of
+    the
+    title
+    showPageIdWithTitle = 1
+
+	# Shows
+    the
+    navigation
+    title
+    instead
+    of
+    the
+    title
+    if available
+        showNavTitle = 0
+
+	# Disables
+    the
+    left
+    click
+    on
+    an
+    icon
+    that
+    opens
+    the
+    contextmenu
+    disableIconLinkToContextmenu = 0
+
+	# Disable
+    the
+    filter
+    feature in the
+    top
+    panel
+    hideFilter = 1
+
+	# Shows
+    the
+    domain
+    name as a
+    suffix
+    of
+    the
+    title
+    if available
+        showDomainNameWithTitle = 0
+
+	 # Pagetree
+    Backgroundcolor
+    backgroundColor
+    {
+        5 = #cc9900
+        7 = #ff0000
+    }
+}

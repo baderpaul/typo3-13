@@ -1,0 +1,16 @@
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+
+editor:
+  config:
+    contentsCss: "EXT:setup_package/Resources/Public/Styles/CkEditor.css"
+    toolbarGroups:
+      - { name: basicstyles, groups: [ basicstyles] }
+      - { name: clipboard, groups: [clipboard, undo] }
+    removeButtons:
+      - Anchor
+      - Superscript
+      - Subscript
+      - Underline
+      - Strike

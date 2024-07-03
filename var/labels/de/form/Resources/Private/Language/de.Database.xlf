@@ -178,14 +178,11 @@
 				<source>Location</source>
 			<target state="final">Ort</target></trans-unit>
       <trans-unit id="formManager.references" resname="formManager.references" xml:space="preserve" approved="yes">
-				<source>References</source>
-			<target state="final">Referenzen</target></trans-unit>
+				<source>Ref</source>
+			<target state="final">Ref</target></trans-unit>
       <trans-unit id="formManager.options" resname="formManager.options" xml:space="preserve" approved="yes">
 				<source>Options</source>
 			<target state="final">Optionen</target></trans-unit>
-      <trans-unit id="formManager.show_references" resname="formManager.show_references" xml:space="preserve" approved="yes">
-				<source>Show references for this form</source>
-			<target state="final">Referenzen für dieses Formular anzeigen</target></trans-unit>
       <trans-unit id="formManager.edit_form" resname="formManager.edit_form" xml:space="preserve" approved="yes">
 				<source>Edit this form</source>
 			<target state="final">Dieses Formular bearbeiten</target></trans-unit>

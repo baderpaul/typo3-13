@@ -19,31 +19,6 @@
         <source>Show references</source>
         <target state="final">Referenzen anzeigen</target>
       </trans-unit>
-      <trans-unit id="systemInformation.header" resname="systemInformation.header" approved="yes">
-        <source>System Information</source>
-        <target state="final">Systeminformationen</target>
-      </trans-unit>
-      <trans-unit id="systemmessage.intro.text" resname="systemmessage.intro.text" approved="yes">
-        <source>This is a short system overview. For advanced information please head to: </source>
-        <target state="final">Dies ist ein kurzer Systemüberblick. Für weitergehende Informationen konsultieren Sie bitte: </target>
-      </trans-unit>
-      <trans-unit id="systemmessage.intro.link" resname="systemmessage.intro.link" approved="yes">
-        <source>Environment Module</source>
-        <target state="final">Environment-Modul</target>
-      </trans-unit>
-      <trans-unit id="systemmessage.allgood" resname="systemmessage.allgood" xml:space="preserve" approved="yes">
-				<source>Your system is fully operational.
-Have a nice day.</source>
-			<target state="final">Ihr System ist voll funktionsfähig.
-Einen schönen Tag noch!</target></trans-unit>
-      <trans-unit id="usermodule.su.list" resname="usermodule.su.list" approved="yes">
-        <source>Recently switched to</source>
-        <target state="final">Neulich gewechselt zu</target>
-      </trans-unit>
-      <trans-unit id="usermodule.su.tooltip" resname="usermodule.su.tooltip" approved="yes">
-        <source>Switch to user %s</source>
-        <target state="final">Wechseln zu Benutzer %s</target>
-      </trans-unit>
       <trans-unit id="config.loginLogo" resname="config.loginLogo" approved="yes">
         <source>Logo: If set, this logo will be used instead of the TYPO3 logo above the login credential fields (e.g. fileadmin/images/login-logo.png or EXT:my_theme/Resources/Public/Images/login-logo.png or //domain.tld/login-logo.png).</source>
         <target state="final">Logo: Wenn gesetzt, wird dieses Logo anstelle des TYPO3-Logos über dem Anmeldefeld gezeigt (bspw. fileadmin/images/login-logo.png oder EXT:my_theme/Resources/Public/Images/login-logo.png oder //domain.tld/login-logo.png).</target>
@@ -251,6 +226,18 @@ Einen schönen Tag noch!</target></trans-unit>
       <trans-unit id="liveSearch.pageRecordProvider.typeLabel" resname="liveSearch.pageRecordProvider.typeLabel" approved="yes">
         <source>Page</source>
         <target state="final">Seite</target>
+      </trans-unit>
+      <trans-unit id="liveSearch.backendModuleProvider.filterLabel" resname="liveSearch.backendModuleProvider.filterLabel" approved="yes">
+        <source>Backend modules</source>
+        <target state="final">Backend-Module</target>
+      </trans-unit>
+      <trans-unit id="liveSearch.backendModuleProvider.typeLabel" resname="liveSearch.backendModuleProvider.typeLabel" approved="yes">
+        <source>Backend module</source>
+        <target state="final">Backend-Modul</target>
+      </trans-unit>
+      <trans-unit id="resultItem.backendModuleProvider.openModule" resname="resultItem.backendModuleProvider.openModule" approved="yes">
+        <source>Open module</source>
+        <target state="final">Modul öffnen</target>
       </trans-unit>
       <trans-unit id="moduleMenu.dropdown.label" resname="moduleMenu.dropdown.label" approved="yes">
         <source>Module action</source>

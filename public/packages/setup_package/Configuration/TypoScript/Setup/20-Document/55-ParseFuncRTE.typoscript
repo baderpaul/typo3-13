@@ -1,0 +1,1 @@
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.list := addToList(table, table-striped, table-bordered, table-sm, table-inverse, table-hover, table-condensed, table-dark)

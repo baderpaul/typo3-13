@@ -37,14 +37,14 @@
                 <source>Cancel</source>
             <target state="final">Abbrechen</target></trans-unit>
       <trans-unit id="formManager.remove_form" resname="formManager.remove_form" xml:space="preserve" approved="yes">
-                <source>Remove</source>
-            <target state="final">Entfernen</target></trans-unit>
+                <source>Delete</source>
+            <target state="final">Löschen</target></trans-unit>
       <trans-unit id="formManager.remove_form_title" resname="formManager.remove_form_title" xml:space="preserve" approved="yes">
-                <source>Remove form</source>
-            <target state="final">Formular entfernen</target></trans-unit>
+                <source>Confirm deletion</source>
+            <target state="final">Löschen bestätigen</target></trans-unit>
       <trans-unit id="formManager.remove_form_message" resname="formManager.remove_form_message" xml:space="preserve" approved="yes">
-                <source>Are you sure that you want to remove this form?</source>
-            <target state="final">Dieses Formular tatsächlich entfernen?</target></trans-unit>
+                <source>Do you really want to delete the form "{0}" permanently? You cannot revert this action!</source>
+            <target state="final">Willst du das Formular "{0}" wirklich endgültig löschen? Du kannst diese Aktion nicht rückgängig machen!</target></trans-unit>
       <trans-unit id="formManager.newFormWizard.step1.title" resname="formManager.newFormWizard.step1.title" xml:space="preserve" approved="yes">
                 <source>Create new form</source>
             <target state="final">Neues Formular erstellen</target></trans-unit>
@@ -97,20 +97,28 @@
                 <source>The form could not be saved</source>
             <target state="final">Das Formular konnte nicht gespeichert werden</target></trans-unit>
       <trans-unit id="formManager.no_references" resname="formManager.no_references" xml:space="preserve" approved="yes">
-                <source>There are no references yet</source>
-            <target state="final">Es gibt noch keine Referenzen</target></trans-unit>
-      <trans-unit id="formManager.page" resname="formManager.page" xml:space="preserve" approved="yes">
-                <source>Page</source>
-            <target state="final">Seite</target></trans-unit>
-      <trans-unit id="formManager.record" resname="formManager.record" xml:space="preserve" approved="yes">
-                <source>Record</source>
-            <target state="final">Datensatz</target></trans-unit>
+                <source>There are no references yet.</source>
+            <target state="final">Es gibt noch keine Referenzen.</target></trans-unit>
+      <trans-unit id="formManager.table.field.control" resname="formManager.table.field.control" approved="yes">
+        <source>Control</source>
+        <target state="final">Steuerung</target>
+      </trans-unit>
+      <trans-unit id="formManager.table.field.uid" resname="formManager.table.field.uid" approved="yes">
+        <source>Uid</source>
+        <target state="final">Uid</target>
+      </trans-unit>
+      <trans-unit id="formManager.table.field.title" resname="formManager.table.field.title" xml:space="preserve" approved="yes">
+                <source>Title</source>
+            <target state="final">Titel</target></trans-unit>
+      <trans-unit id="formManager.btn.edit.title" resname="formManager.btn.edit.title" xml:space="preserve" approved="yes">
+                <source>Edit</source>
+            <target state="final">Bearbeiten</target></trans-unit>
       <trans-unit id="formManager.references.title" resname="formManager.references.title" xml:space="preserve" approved="yes">
-                <source>References</source>
-            <target state="final">Referenzen</target></trans-unit>
+                <source>Form: {0}</source>
+            <target state="final">Formular: {0}</target></trans-unit>
       <trans-unit id="formManager.references.headline" resname="formManager.references.headline" xml:space="preserve" approved="yes">
-                <source>References for "{0}"</source>
-            <target state="final">Referenzen für "{0}"</target></trans-unit>
+                <source>References to this item</source>
+            <target state="final">Referenzen auf dieses Element</target></trans-unit>
       <trans-unit id="formManager.blankForm.label" resname="formManager.blankForm.label" xml:space="preserve" approved="yes">
                 <source>Blank form</source>
             <target state="final">Leeres Formular</target></trans-unit>

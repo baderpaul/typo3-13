@@ -1,0 +1,7 @@
+<f:if condition="{data.tx_mask_iconteaserfrontendheadline}">{data.tx_mask_iconteaserfrontendheadline}</f:if>
+<p>Folgende einzelne Teaser mit Icon sind enthalten:</p>
+<ul>
+    <f:for each="{data.tx_mask_teaseritems}" as="data_item">
+        <li>{data_item.tx_mask_iconteaserheadline}</li>
+    </f:for>
+</ul>

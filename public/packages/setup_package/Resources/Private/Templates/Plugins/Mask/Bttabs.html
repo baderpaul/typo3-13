@@ -1,0 +1,26 @@
+<ul class="nav pt-20 pt-md-40 {f:if(condition: '{data.tx_mask_tabdisplay} == 2', then: 'nav-pills justify-content-center', else: 'nav-tabs')} " id="tab-{data.uid}" role="tablist">
+    <f:for each="{data.tx_mask_tabs}" as="data_item" iteration="i">
+        <li class="nav-item" role="presentation">
+            <button
+              class="nav-link {f:if(condition:i.isFirst, then: 'active')}"
+              id="{data_item.uid}-tab"
+              type="button"
+              data-bs-toggle="tab"
+              data-bs-target="#tab-{data_item.uid}"
+              role="tab"
+              aria-controls="tab-{data_item.uid}"
+              aria-selected="true">
+                {data_item.tx_mask_tab}</button>
+        </li>
+    </f:for>
+        </ul>
+
+<div class="tab-content mb-25 mb-md-30 p-20 {f:if(condition: '{data.tx_mask_tabdisplay} == 2', then: ' border-0', else: ' border border-primary')} border-1 {f:if(condition: '{data.tx_mask_tabdisplay} == 1', then: ' border-top-0')}" id="tabcontent-{data.uid}">
+    <f:for each="{data.tx_mask_tabs}" as="data_item" iteration="i">
+        <div class="tab-pane fade {f:if(condition:i.isFirst, then: 'show active')}" id="tab-{data_item.uid}" role="tabpanel" aria-labelledby="tab-{data_item.uid}">
+        <f:for each="{data_item.tx_mask_tabcontent}" as="data_item_item">
+            <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>
+        </f:for>
+        </div>
+    </f:for>
+</div>

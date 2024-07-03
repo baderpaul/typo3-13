@@ -3,6 +3,10 @@
   <file source-language="en" datatype="plaintext" original="EXT:extbase/Resources/Private/Language/locallang.xlf" date="2012-10-17T19:30:32Z" product-name="extbase" target-language="de">
     <header/>
     <body>
+      <trans-unit id="converter.datetime.notrecognized" resname="converter.datetime.notrecognized" approved="yes">
+        <source>The date "%s" was not recognized (for format "%s").</source>
+        <target state="final">Das Datum "%s" wurde nicht erkannt (für Format "%s").</target>
+      </trans-unit>
       <trans-unit id="property.error" resname="property.error" approved="yes">
         <source>Validation errors for property "%s"</source>
         <target state="final">Validierungsfehler für die Eigenschaft "%s"</target>
@@ -35,10 +39,6 @@
         <source>The given subject was not a valid DateTime. Got: '%s'</source>
         <target state="final">Der angegebene Wert ist kein gültiges DateTime - Objekt: '%s'</target>
       </trans-unit>
-      <trans-unit id="validator.genericobject.noobject" resname="validator.genericobject.noobject" approved="yes">
-        <source>Value is no object.</source>
-        <target state="final">Der Wert ist kein Objekt.</target>
-      </trans-unit>
       <trans-unit id="validator.float.notvalid" resname="validator.float.notvalid" approved="yes">
         <source>The given subject was not a valid float.</source>
         <target state="final">Der angegebene Wert ist keine gültige Gleitkommazahl.</target>
@@ -47,17 +47,9 @@
         <source>The given subject was not a valid text (e.g. contained XML tags).</source>
         <target state="final">Der angegebene Wert ist kein gültiges Text-Objekt (enthält z.B. XML-Tags).</target>
       </trans-unit>
-      <trans-unit id="validator.regularexpression.empty" resname="validator.regularexpression.empty" approved="yes">
-        <source>The regular expression was empty.</source>
-        <target state="final">Der reguläre Ausdruck ist leer.</target>
-      </trans-unit>
       <trans-unit id="validator.regularexpression.nomatch" resname="validator.regularexpression.nomatch" approved="yes">
         <source>The given subject did not match the pattern.</source>
         <target state="final">Der angegebene Wert stimmt nicht mit dem Muster überein.</target>
-      </trans-unit>
-      <trans-unit id="validator.regularexpression.error" resname="validator.regularexpression.error" approved="yes">
-        <source>The regular expression '%s' contained an error.</source>
-        <target state="final">Der reguläre Ausdruck '%s' enthält einen Fehler.</target>
       </trans-unit>
       <trans-unit id="validator.numberrange.notvalid" resname="validator.numberrange.notvalid" approved="yes">
         <source>The given subject was not a valid number.</source>

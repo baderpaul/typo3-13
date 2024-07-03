@@ -34,6 +34,9 @@ return [
             'loginLogo' => '',
             'loginLogoAlt' => '',
         ],
+        'editor_widgets' => [
+            'storageSizeWidget_maxSize' => '2GB',
+        ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',

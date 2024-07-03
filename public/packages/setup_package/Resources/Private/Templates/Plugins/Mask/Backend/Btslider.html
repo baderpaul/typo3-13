@@ -1,0 +1,8 @@
+<strong style="display:block">Bilder</strong>
+<f:for each="{data.tx_mask_slideimages}" as="data_item">
+    <div style="display: inline-block;">
+        <f:for each="{data_item.tx_mask_slideitem}" as="file">
+            <f:image image="{file}" width="100"></f:image><br />
+        </f:for>
+    </div>
+</f:for>

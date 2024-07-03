@@ -1,0 +1,28 @@
+.accordion-header::after {
+    display: none;
+}
+
+.accordion-button {
+    font-size: 0.875rem;
+    color: $white;
+    background-color: $primary;
+}
+
+.accordion-button:focus:not(:focus-visible) {
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.accordion-body{
+    h2 {
+        display: inline;
+    }
+    .ce-gallery,
+    .ce-bodytext > p:last-child {
+        margin-bottom: 0 !important;
+    }
+} 
+
+.accordion-body > .frame {
+    padding: 0 !important;
+}

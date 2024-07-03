@@ -19,9 +19,9 @@
         <source>Step {0} of {1}</source>
         <target state="final">Schritt {0} von {1}</target>
       </trans-unit>
-      <trans-unit id="wizard.progressStep" approved="yes">
-        <source>Step-</source>
-        <target state="final">Schritt-</target>
+      <trans-unit id="wizard.progressWithLabel" resname="wizard.progress" approved="yes">
+        <source>Step {0} of {1}: {2}</source>
+        <target state="final">Schritt {0} von {1}: {2}</target>
       </trans-unit>
       <trans-unit id="wizard.progressStep.start" approved="yes">
         <source>Start</source>

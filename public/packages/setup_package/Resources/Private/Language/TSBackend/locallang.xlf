@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+        <xliff version="1.0">
+            <file source-language="en" datatype="plaintext" original="messages" date="2013-02-24T16:42:57Z" product-name="theme_kit">
+                <header/>
+                <body>
+
+
+                    <!-- **************************************
+                         Language
+                         ************************************** -->
+                        <trans-unit id="language.languageswitch-label">
+                            <source>Select Language</source>
+                        </trans-unit>
+
+                    <!-- **************************************
+                         tt_content headlines START
+                         ************************************** -->
+
+                        <trans-unit id="label.header_layout.h1" approved="yes">
+                            <source>Überschrift 1</source>
+                        </trans-unit>
+                        <trans-unit id="label.header_layout.h2" approved="yes">
+                            <source>Überschrift 2</source>
+                        </trans-unit>
+                        <trans-unit id="label.header_layout.h3" approved="yes">
+                            <source>Überschrift 3</source>
+                        </trans-unit>
+                        <trans-unit id="label.header_layout.h4" approved="yes">
+                            <source>Überschrift 4</source>
+                        </trans-unit>
+                        <trans-unit id="label.header_layout.h5" approved="yes">
+                            <source>Überschrift 5</source>
+                        </trans-unit>
+
+
+                    <!-- **************************************
+                         TCEFORM section_frame
+                         ************************************** -->
+
+                        <trans-unit id="label.section_frame.customFrame" approved="yes">
+                            <source>custom Frame</source>
+                        </trans-unit>
+
+                    <!-- **************************************
+                         tt_content layouts
+                         ************************************** -->
+
+                        <trans-unit id="label.ttcontent.layout.customLayout" approved="yes">
+                            <source>custom Layout</source>
+                        </trans-unit>
+
+                    <!-- **************************************
+                         pages layouts
+                         ************************************** -->
+
+                        <trans-unit id="label.pages.layout.customPageLayout" approved="yes">
+                            <source>custom Page Layout</source>
+                        </trans-unit>
+
+                </body>
+            </file>
+        </xliff>

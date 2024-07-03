@@ -1,0 +1,21 @@
+.submenu {
+    @extend .bg-primary;
+    font-size: $font-size-nav;
+    li {
+        &:hover {
+            li {
+                @extend .bg-primary; 
+            }
+        }
+        .active,
+        .current {
+            a {
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+        a {
+            color: $white;
+        }
+    }
+}

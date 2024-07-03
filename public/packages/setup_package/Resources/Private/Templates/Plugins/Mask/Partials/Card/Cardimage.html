@@ -1,0 +1,21 @@
+<f:for each="{data_item.tx_mask_cardimage}" as="file">
+        <ai:ratioBox file="{file}" mediaQueries="{card: '(max-width:1920px)'}">
+         <picture class="loader">
+             <source media="(max-width: 1920px)"
+                     srcset="{ai:getSrcset(file:file, cropVariant: 'card', widths:'360', debug:debug)}">          
+             <f:media file="{file}"
+                      class="lazyload img-fluid card-img-top"
+                      width="{dimensions.width}"
+                      alt="{file.alternative}"
+                      title="{file.title}"
+                      data="{
+                          'img-debug':'{jsdebug}'
+                      }"
+                      additionalAttributes="{
+                          'sizes':'{sizesAttr}',
+                          'srcset': '{ai:getSrcset(file:file, widths:\'360\', debug:debug)}'
+                      }"
+             />
+         </picture>
+     </ai:ratioBox>
+</f:for> 

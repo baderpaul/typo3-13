@@ -1,0 +1,26 @@
+<div class="frontside card text-white">
+    <f:for each="{data_item.tx_mask_flipcard_front_image}" as="file">
+<ai:ratioBox file="{file}" mediaQueries="{flipcard: '(max-width:1920px)'}">
+<picture class="loader">
+ <source media="(max-width: 1920px)"
+         srcset="{ai:getSrcset(file:file, cropVariant: 'flipcard', widths:'320', debug:debug)}">          
+ <f:media file="{file}"
+          class="lazyload img-fluid card-img"
+          width="{dimensions.width}"
+          alt="{file.alternative}"
+          title="{file.title}"
+          data="{
+              'img-debug':'{jsdebug}'
+          }"
+          additionalAttributes="{
+              'sizes':'{sizesAttr}',
+              'srcset': '{ai:getSrcset(file:file, widths:\'320\', debug:debug)}'
+          }"
+ />
+</picture>
+</ai:ratioBox>
+</f:for> 
+    <div class="card-img-overlay">
+        <h5 class="card-title text-center bg-white text-dark px-5">{data_item.tx_mask_flipcard_front_title}</h5>
+      </div>
+</div>

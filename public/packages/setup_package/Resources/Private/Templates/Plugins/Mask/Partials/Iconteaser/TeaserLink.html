@@ -1,0 +1,6 @@
+ <f:link.typolink parameter="{data_item.tx_mask_iconteaserlink}"
+        class="btn btn-primary {f:if(condition: '{data_item.tx_mask_iconteaserlinkall}', then: 'stretched-link')}
+        {f:if(condition: '{data.tx_mask_iconteasermodus}==1 && {data.tx_mask_iconteaserctabuttonsameheight}==1', then:'mt-auto')}"
+        additionalAttributes="{role:'button'}">    
+    {data_item.tx_mask_iconteaserlinklabel}
+</f:link.typolink>

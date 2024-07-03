@@ -1,0 +1,11 @@
+<div class="backside card position-absolute d-flex align-content-between w-100 bg-primary text-white p-16">
+    <f:if condition="{data_item.tx_mask_flipcard_back_description}">
+        {data_item.tx_mask_flipcard_back_description -> f:format.html()}
+    </f:if>
+    <f:if condition="{data_item.tx_mask_flipcard_back_link_target}">
+        <f:link.typolink parameter="{data_item.tx_mask_flipcard_back_link_target}"
+        class="btn btn-light position-absolute bottom-10 start-10 end-10" 
+        title="{data_item.tx_mask_flipcard_back_link_label}"
+        additionalAttributes="{type:'button'}">{data_item.tx_mask_flipcard_back_link_label}</f:link.typolink>
+    </f:if>
+</div>

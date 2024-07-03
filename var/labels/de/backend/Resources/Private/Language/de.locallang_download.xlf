@@ -139,6 +139,10 @@
         <source>No information, only download records</source>
         <target state="final">Keine Informationen, nur Datensätze herunterladen</target>
       </trans-unit>
+      <trans-unit id="downloadSettings.preset" resname="downloadSettings.preset" approved="yes">
+        <source>Preset</source>
+        <target state="final">Voreinstellung</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -1,0 +1,9 @@
+/*
+* overwrite default value from glightbox/dist/css/glightbox.min.css
+*/
+@include media-breakpoint-down(md) {
+    .glightbox-clean .gnext,
+    .glightbox-clean .gprev{
+        top: 45%;
+    }
+}

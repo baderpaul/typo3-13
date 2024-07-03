@@ -1,0 +1,28 @@
+<f:if condition="{data.tx_mask_socialmedia}">
+    <ul class="d-flex justify-content-between justify-content-md-start list-inline mb-0">
+        <f:for each="{data.tx_mask_socialmedia}" as="data_item" iteration="i">
+            <li class="list-inline-item 
+                       {f:if(condition: '{data_item.tx_mask_socialmediawithbootstrapicons} == 1', then: 'social-media-font', else: 'social-media-icon')}
+                       {f:if(condition:i.isLast, then: 'me-0', else: 'me-10')}">
+                <f:link.typolink
+                        parameter="{data_item.tx_mask_socialmedialink}"
+                        additionalAttributes="{rel:'noopener', aria-label: 'social-media{f:if(condition: \'{data_item.tx_mask_selectsocialmedia} == facebook\', then: \'-facebook\')}{f:if(condition: \'{data_item.tx_mask_selectsocialmedia} == twitter\', then: \'-twitter\')}{f:if(condition: \'{data_item.tx_mask_selectsocialmedia} == youtube\', then: \'-youtube\')}{f:if(condition: \'{data_item.tx_mask_selectsocialmedia} == instagram\', then: \'-instagram\')}{f:if(condition: \'{data_item.tx_mask_selectsocialmedia} == linkedin\', then: \'-lindedin\')}{f:if(condition: \'{data_item.tx_mask_selectsocialmedia} == xing\', then: \'-xing\')}{f:if(condition: \'{data_item.tx_mask_selectsocialmedia} == whatsapp\', then: \'-whatsapp\')}'}"
+                        class="social-media-link  
+                        {f:if(condition: '{data_item.tx_mask_selectsocialmedia}', then: ' link-primary bi')}
+                        {f:if(condition: '{data_item.tx_mask_selectsocialmedia} == facebook', then: ' bi-facebook')}
+                        {f:if(condition: '{data_item.tx_mask_selectsocialmedia} == twitter', then: ' bi-twitter')}
+                        {f:if(condition: '{data_item.tx_mask_selectsocialmedia} == youtube', then: ' bi-youtube')}
+                        {f:if(condition: '{data_item.tx_mask_selectsocialmedia} == instagram', then: ' bi-instagram')}
+                        {f:if(condition: '{data_item.tx_mask_selectsocialmedia} == linkedin', then: ' bi-linkedin')}
+                        {f:if(condition: '{data_item.tx_mask_selectsocialmedia} == xing', then: ' bi-xing')}
+                        {f:if(condition: '{data_item.tx_mask_selectsocialmedia} == whatsapp', then: ' bi-whatsapp')}">
+                    <f:if condition="{data_item.tx_mask_socialmediaicon}">
+                        <f:for each="{data_item.tx_mask_socialmediaicon}" as="file">
+                            <f:image image="{file}" alt="{file.title}" title="{file.title}"/>
+                        </f:for>
+                    </f:if>
+                </f:link.typolink>
+            </li>
+        </f:for>
+    </ul>
+</f:if>

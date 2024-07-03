@@ -1,0 +1,44 @@
+/*
+* felogin_login use default flashmassages from TYPO3 Core
+* found in sysext/core/Classes/Messaging/Renderer/ListRender.php
+* this is a simple cssfix
+
+.typo3-messages {
+    list-style-type: none;
+    padding: 0;
+}
+*/
+img {
+    border: 0;
+    height: auto;
+    width: 100%;
+}
+
+// hide - show navbar
+.scrolled-down {
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+
+.scrolled-up {
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+
+//css devicedetection for js mmenu
+.state-indicator {
+    position: absolute;
+     top: -999em;
+     left: -999em;
+     z-index: 1;
+ }
+ 
+ // set form honeypot outside
+ .ms-n999 {
+     margin-left: -2000px;
+ }
+
+ // flipcard cta btn fix bootstrap 5 will not extand sass map jet
+ .btn-flipcard-bottom {
+    bottom: $spacer;
+    left: $spacer;
+    right: $spacer;
+ }

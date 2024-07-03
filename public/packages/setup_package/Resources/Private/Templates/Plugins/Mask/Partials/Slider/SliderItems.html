@@ -1,0 +1,46 @@
+<f:for each="{data.tx_mask_slideimages}" as="data_item" iteration="indicator-2">
+    <div class="carousel-item {f:if(condition:'{indicator-2.isFirst}',then:' active')}">
+        <f:for each="{data_item.tx_mask_slideitem}" as="file">
+            <ai:ratioBox file="{file}" mediaQueries="{slidermobile: '(max-width:767px)', sliderdesktop: '(min-width:768px)'}">
+                <picture class="loader img-filter position-absolute">
+                      <source media="(max-width: 767px)"
+                              data-srcset="{ai:getSrcset(file:file, cropVariant: 'slidermobile', widths:'360,480,580,660,768', debug:debug)}"
+                              srcset="{ai:placeholder.svg(file: file, cropVariant: 'slidermobile')} 1w"
+                              sizes='{sizesAttr}'
+                              data-sizes="auto"
+                      >
+                      <source media="(min-width: 768px)"
+                      data-srcset="{ai:getSrcset(file:file, cropVariant: 'sliderdesktop', widths:'800,1024,1280,1440,1600,1700,1920', debug:debug)}"
+                      srcset="{ai:placeholder.svg(file: file, cropVariant: 'sliderdesktop')} 1w"
+                      sizes='{sizesAttr}'
+                      data-sizes="auto"
+                      >
+                      <f:media file="{file}"
+                               class="image-embed-item lazyload img-responsive"
+                               width="{dimensions.width}"
+                               alt="{file.alternative}"
+                               title="{file.title}"
+                               data="{
+                                  'img-debug':'{jsdebug}',
+                                  'sizes': 'auto',
+                                  'srcset': '{ai:getSrcset(file:file, widths:\'360\', debug:debug)}'
+                               }"
+                               additionalAttributes="{
+                                  'sizes':'100vw',
+                                  'srcset': '{ai:placeholder.svg(file: file)} 1w'
+                               }"
+                      />
+                  </picture>
+                </ai:ratioBox> 
+        </f:for>
+<f:if condition="{data_item.tx_mask_slogan_big} || {data_item.tx_mask_slogan_small} || {data_item.tx_mask_slogan_cta}">
+    <f:render partial="Partials/Slider/SliderSlogan" arguments="{_all}"/>
+</f:if>
+        <f:if condition="{data_item.tx_mask_imagedescription}">
+            <f:render partial="Partials/Slider/SliderItemDescrption" arguments="{_all}"/>
+        </f:if>
+    </div>
+    
+</f:for>
+<f:asset.css identifier="slider" priority="true">
+.fadeIn{animation-name: fadeIn;animation-duration: 2s;animation-timing-function: ease-in-out;}.fadeInUp {animation-name: fadeInUp;animation-duration: 1s;animation-timing-function: ease-in-out;}.fadeInDown {animation-name: fadeInDown;animation-duration: 1s;animation-timing-function: ease-in-out;}.text-shadow-hero {text-shadow: 2px 1px 2px #adb5bd;}</f:asset.css>

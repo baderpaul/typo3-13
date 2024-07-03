@@ -1,0 +1,20 @@
+// Bootstrap 5 functions
+@import "../../Public/Vendor/bootstrap/scss/functions";
+// add custom variables overwrite bootstrap variables
+@import "CustomVariables/Variables";
+@import "../../Public/Vendor/bootstrap/scss/variables";
+//@import "../../Public/Vendor/bootstrap/scss/variables-dark";
+@import "../../Public/Vendor/bootstrap/scss/maps";
+@import "CustomVariables/Maps";
+// add custom mixins overwrite bootstrap mixins
+@import "../../Public/Vendor/bootstrap/scss/mixins";
+@import "CustomVariables/Mixins";
+@import "../../Public/Vendor/bootstrap/scss/root";
+// add custom utilities overwrite/extend bootstrap utilities
+@import "../../Public/Vendor/bootstrap/scss/utilities";
+@import "CustomVariables/Utilities";
+
+//  custom Bootstrap Icons 
+@import "CustomStyles/BootstrapIcons/BootstrapIcons";
+
+// Test test

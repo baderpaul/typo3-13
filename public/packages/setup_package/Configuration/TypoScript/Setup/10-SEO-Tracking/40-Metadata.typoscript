@@ -1,0 +1,11 @@
+page.meta {
+    viewport = width=device-width, initial-scale=1
+    robots = index,follow
+
+    description.data = page:description
+    description.ifEmpty.data = levelfield :-1, description, slide
+    description.crop = 120|
+
+    keywords.data = page:keywords
+    keywords.ifEmpty.data = levelfield :-1, keywords, slide
+}

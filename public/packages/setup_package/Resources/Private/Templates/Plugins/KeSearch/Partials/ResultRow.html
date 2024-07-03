@@ -1,0 +1,70 @@
+<!--
+	=====================
+	Partials/ResultRow.html
+-->
+
+<div class="result-list-item result-list-item-type-{resultrow.type} p-20 position-relative border border-primary border-1 border-top-0">
+    <f:asset.css identifier="result-list-item ">
+        .result-list-item:first-child {
+            border-top: 1px solid #3d8ed4 !important;
+        } 
+        </f:asset.css>
+	<span class="result-title d-block">
+        <f:if condition="{conf.resultsNumeration}">
+		<span class="result-number pe-5">{resultrow.number}. </span>
+	</f:if>
+        <f:format.raw>{resultrow.title}</f:format.raw>
+    </span><f:comment>	
+	<div class="add-info">
+        <f:if condition="{conf.showResultUrl}">
+			<i>{f:translate(key: 'LLL:EXT:ke_search/Resources/Private/Language/locallang_searchbox.xlf:label_resulturl')}:</i> <f:format.raw>{resultrow.url}</f:format.raw><br />
+		</f:if>
+
+		<f:if condition="{resultrow.type} == 'cal'">
+			<f:then>
+				<!-- Special cal date rendering -->
+				<f:render partial="CalDate" arguments="{resultrow: resultrow}" />
+				<br />
+			</f:then>
+			<f:else>
+				<!-- Default date rendering -->
+				<f:if condition="{conf.showDate}">
+					<i>{f:translate(key: 'LLL:EXT:ke_search/Resources/Private/Language/locallang_searchbox.xlf:label_date')}:</i> <f:format.date>{resultrow.date_timestamp}</f:format.date><br />
+                </f:if>
+            
+			</f:else>
+		</f:if>
+       
+		<f:if condition="{conf.showTags}">
+			<i>{f:translate(key: 'LLL:EXT:ke_search/Resources/Private/Language/locallang_searchbox.xlf:label_tags')}:</i> {resultrow.tags}<br />
+		</f:if>
+    
+	</div>
+</f:comment>	
+    <f:comment>
+	<span class="teaser_icon">
+        <f:render
+            section="typeIconOrPreviewImage"
+            arguments="{icon: resultrow.typeIconPath, filePreviewId: resultrow.filePreviewId, treatIdAsReference:resultrow.treatIdAsReference, iconConf: conf.showTypeIcon}"
+        />
+    </span>
+</f:comment>
+
+	<span class="result-teaser">
+        <f:format.raw>{resultrow.teaser}</f:format.raw>
+        </span>
+</div>
+
+
+<f:section name="typeIconOrPreviewImage">
+    <f:if condition="{iconConf} && !{filePreviewId}">
+        <f:then>
+            <f:image src="{icon}" maxWidth="16" maxHeight="16" />
+        </f:then>
+        <f:else>
+            <f:if condition="{filePreviewId}">
+                <f:image src="{filePreviewId}" treatIdAsReference="{treatIdAsReference}" maxWidth="200" />
+            </f:if>
+        </f:else>
+    </f:if>
+</f:section>

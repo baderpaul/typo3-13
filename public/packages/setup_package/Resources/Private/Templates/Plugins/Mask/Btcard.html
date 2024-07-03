@@ -1,0 +1,35 @@
+<div class="row px-10 px-lg-0 mb-25 mb-md-30 mx-0
+        {f:if(condition: '{data.tx_mask_responsive_xs}', then: '{data.tx_mask_responsive_xs}')}
+        {f:if(condition: '{data.tx_mask_responsive_sm}', then: '{data.tx_mask_responsive_sm}')}
+        {f:if(condition: '{data.tx_mask_responsive_md}', then: '{data.tx_mask_responsive_md}')}
+        {f:if(condition: '{data.tx_mask_responsive_lg}', then: '{data.tx_mask_responsive_lg}')}
+        {f:if(condition: '{data.tx_mask_responsive_xl}', then: '{data.tx_mask_responsive_xl}')}
+        {f:if(condition: '{data.tx_mask_responsive_xxl}', then: '{data.tx_mask_responsive_xxl}')}
+        {f:if(condition: '{data.tx_mask_cardspace_mobile}', then: '{data.tx_mask_cardspace_mobile}')}
+        {f:if(condition: '{data.tx_mask_cardspace_tablet}', then: '{data.tx_mask_cardspace_tablet}')}
+        {f:if(condition: '{data.tx_mask_cardspace_desktop}', then: '{data.tx_mask_cardspace_desktop}')}   
+">
+    <f:for each="{data.tx_mask_cards}" as="data_item">
+        <div class="col">
+        <div class="card h-100 border border-primary">
+            <f:if condition="{data_item.tx_mask_card_has_image}==1">
+                <f:render partial="Partials/Card/Cardimage" arguments="{_all}"/>
+            </f:if>
+            
+            <div class="card-body">
+                <f:render partial="Partials/Card/Cardtitle" arguments="{_all}"/>
+                <f:render partial="Partials/Card/Cardbody" arguments="{_all}"/>
+            </div>
+            <f:if condition="{data_item.tx_mask_card_has_image}==2">
+                <f:render partial="Partials/Card/Cardimage" arguments="{_all}"/>
+            </f:if>
+            <f:if condition="{data_item.tx_mask_is_linked}">
+            <div class="card-footer">
+                <f:render partial="Partials/Card/Cardfooter.html" arguments="{_all}"/>
+            </div>
+            </f:if> 
+            
+        </div>
+    </div>
+    </f:for>
+</div>

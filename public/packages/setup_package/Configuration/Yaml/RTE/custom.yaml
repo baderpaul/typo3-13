@@ -1,0 +1,215 @@
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+#allowTagsOutside: [address, article, aside, blockquote, figure, figcaption, footer, header, hr, nav, section, div]
+editor:
+  externalPlugins:
+    setup_package_table:
+      resource: "EXT:setup_package/Resources/Public/CKEditor/Plugins/Table/plugin.js"
+  config:
+    contentsCss: "EXT:setup_package/Resources/Public/Styles/CkEditor.css"
+    toolbar:
+      items:
+        - style
+        - heading
+        - "|"
+        - "-"
+        - bold
+        - italic
+        - subscript
+        - superscript
+        - softhyphen
+        - bulletedList
+        - numberedList
+        - blockQuote
+        - alignment
+        - "|"
+        - findAndReplace
+        - link
+        - "|"
+        - removeFormat
+        - undo
+        - redo
+        - "|"
+        - "-"
+        - specialCharacters
+        - horizontalLine
+        - "|"
+        - table
+        - insertTable
+        - tableToolbar
+        - tableProperties
+        - tableRow
+        - tableColumn
+        - mergeTableCells
+        - "|"
+        - sourceEditing
+        - "-"
+
+    stylesSet:
+      # block level styles
+      #  - { name: "Zitat", element: "p", attributes: { 'class': 'blockquote p-20' } }
+      # text
+      #  - { name: "Lowercased text", element: "span", attributes: { 'class': 'text-lowercase' } }
+      #  - { name: "Uppercased text", element: "span", attributes: { 'class': 'text-uppercase' } }
+      #  - { name: "Capitalized text", element: "span", attributes: { 'class': 'text-capitalize' } }
+      # font sizes
+      # - { name: "Text 12px", element: "span", attributes: { 'class': 'fs-12' } }
+      # - { name: "Text 14px", element: "span", attributes: { 'class': 'fs-14' } }
+      # - { name: "Text 18px", element: "span", attributes: { 'class': 'fs-18' } }
+      # - { name: "Parallax 50px", element: "span", attributes: { 'class': 'fs-50' } }
+      # - { name: "Parallax 80px", element: "span", attributes: { 'class': 'fs-80' } }
+      # headlines
+      - {
+          name: "H3 Großbuchstaben",
+          element: ["h3"],
+          attributes: { "class": "fs-17 pb-10 text-uppercase" },
+        }
+      # list
+      #- { name: "Ohne Bullets", element: "ul,ol", attributes: { 'class': 'list-unstyled pl-25' } }
+      #- { name: "Bullets Inline", element: "ul,ol", attributes: { 'class': 'list-inline pl-25' } }
+      - {
+          name: "List Square",
+          element: "ul",
+          attributes: { "class": "list-square" },
+        }
+      - {
+          name: "List Disc",
+          element: "ul",
+          attributes: { "class": "list-disc" },
+        }
+      - {
+          name: "List Leading-zero",
+          element: "ol",
+          attributes: { "class": "list-decimal-leading-zero" },
+        }
+      - {
+          name: "Checkmarks",
+          element: "ul",
+          attributes: { "class": "checkmarks pl-25" },
+        }
+      # tabellen
+      - {
+          name: "Tabelle Simple",
+          element: "table",
+          attributes: { "class": "table" },
+        }
+      - {
+          name: "Tabelle Hover",
+          element: "table",
+          attributes: { "class": "table table-hover" },
+        }
+      - {
+          name: "Tabelle Gestreift",
+          element: "table",
+          attributes: { "class": "table table-striped" },
+        }
+      - {
+          name: "Tabelle m. Rand",
+          element: "table",
+          attributes: { "class": "table table-bordered" },
+        }
+      - {
+          name: "Tabelle Klein",
+          element: "table",
+          attributes: { "class": "table table-sm" },
+        }
+      - {
+          name: "Tabelle Dunkel",
+          element: "table",
+          attributes: { "class": "table table-dark" },
+        }
+
+      #- { name: "Tabelle: Responsive <768px", element: "table", attributes: { 'class': 'table-responsive-md' } }
+      #- { name: "Tabelle: Responsive <576px", element: "table", attributes: { 'class': 'table-responsive-sm' } }
+
+      # a tags/buttons
+      # - { name: "Button Blau", element: "a", attributes: { 'class': 'btn btn-primary btn-sm btnintext' } }
+      - {
+          name: "Button Weiß",
+          element: "a",
+          attributes: { "class": "btn btn-outline-white" },
+        }
+      # - { name: "Button Grau", element: "a", attributes: { 'class': 'btn btn-secondary btn-sm btnintext' } }
+      - {
+          name: "Interner Link",
+          element: "a",
+          attributes: { "class": "internal-link", "title": "internal-link" },
+        }
+      - {
+          name: "Externer Link",
+          element: "a",
+          attributes:
+            {
+              "class": "external-link",
+              "target": "_blank",
+              "title": "external-link",
+            },
+        }
+      # - { name: "Download File", element: "a", attributes: { 'class': 'download pe-14', 'target':'_blank', 'title':'download' } }
+      # - { name: "Link mit Pfeil", element: "a", attributes: { 'class': 'arrow-link pe-18', 'title':'link' } }
+      # - { name: "Link Telefon", element: "a", attributes: { 'class': 'phone-link ps-17', 'title':'telephone' } }
+      # - { name: "CTA 100%", element: "a", attributes: { 'class': 'btn btn-primary w-100', 'title':'link' } }
+      # - { name: "CTA 25%", element: "a", attributes: { 'class': 'btn btn-primary w-25', 'title':'link' } }
+    # marker
+    #- { name: "Yellow Marker", element: "span", styles: { background-color: "yellow" } }
+    format_tags: "p;h2;h3;h4"
+
+    justifyClasses:
+      - text-start
+      - text-center
+      - text-end
+
+    extraPlugins:
+      - justify
+      - find
+      - setup_package_table
+      #- colorbutton
+      #- bidi
+      #- selectall
+      #- autolink
+      #- wordcount
+
+    removePlugins:
+      - image
+      - font
+      - blockquote
+
+    removeButtons:
+      - Anchor
+
+    forcePasteAsPlainText: true
+
+    processing:
+      allowedClasses:
+        - text-start
+        - text-end
+        - text-center
+      # Allow s and u tag
+      allowTags:
+        - s
+        - u
+
+classesAnchor:
+  page:
+    class: "link-page"
+    type: "page"
+  folder:
+    class: "link-folder"
+    type: "folder"
+  file:
+    class: "link-file"
+    type: "file"
+  external:
+    class: "link-external"
+    type: "url"
+  mail:
+    class: "link-mail"
+    type: "mail"
+
+buttons:
+  link:
+    properties:
+      class:
+        allowedClasses: "link-arrow, link-page, link-folder, link-file, link-external, link-mail"

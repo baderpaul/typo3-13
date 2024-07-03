@@ -1,0 +1,6 @@
+<p>Folgende einzelne Cardelemente sind enthalten:</p>
+<ul>
+    <f:for each="{data.tx_mask_cards}" as="data_item">
+        <li>{data_item.tx_mask_cardtitel -> f:format.nl2br()}</li>        
+    </f:for>
+</ul>
